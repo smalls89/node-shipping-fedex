@@ -23,9 +23,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "extend": "~1.2.1",
-    "node-soap": "^1.0.0",
-    "xml2json": "~0.3.2",
-    "xmlbuilder": "~2.1.0"
+    "extend": "^1.2.1",
+    "soap": "^0.8.0",
+    "xml2json": "~0.3.2"
   }
 }
