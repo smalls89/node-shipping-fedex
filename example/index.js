@@ -17,9 +17,10 @@ var fedex = new fedexAPI({
  */
 fedex.rates({
   ReturnTransitAndCommit: true,
+  CarrierCodes: ['FDXE','FDXG'],
   RequestedShipment: {
     DropoffType: 'REGULAR_PICKUP',
-    ServiceType: 'FEDEX_GROUND',
+    //ServiceType: 'FEDEX_GROUND',
     PackagingType: 'YOUR_PACKAGING',
     Shipper: {
       Contact: {
