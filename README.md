@@ -9,23 +9,24 @@
 ```js
   var fedexAPI = require('shipping-fedex');
 
-  var fedex = new upsFedex({
+  var fedex = new fedexAPI({
     environment: 'sandbox', // or live
-    key: 'FEDEXKEY',
-    password: 'FEDEXPASSWORD',
-    account_number: 'FEDEXACCOUNTNUMBER',
-    meter_number: 'FEDEXMETERNUMBER',
+    debug: true,
+    key: 'KEY',
+    password: 'DEVPASSWORD',
+    account_number: 'ACCOUNT#',
+    meter_number: 'METER#',
     imperial: true // set to false for metric
   });
 ```
 
-See `example/index.js` for a working sample.
+See `example/index.js` for working samples.
 
 ## License
 
 (The MIT License)
 
-Copyright 2014 uh-sem-blee, Co. All rights reserved.
+Copyright 2015 uh-sem-blee, Co. All rights reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
