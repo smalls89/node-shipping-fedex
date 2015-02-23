@@ -12,6 +12,9 @@ var fedex = new fedexAPI({
   imperial: true // set to false for metric
 });
 
+/**
+ *  Rates
+ */
 fedex.rates({
   ReturnTransitAndCommit: true,
   RequestedShipment: {
@@ -75,6 +78,50 @@ fedex.rates({
       }
     }
   }
+}, function(err, res) {
+  if(err) {
+    return console.log(err);
+  }
+
+  console.log(res);
+});
+
+/**
+ * Tracking
+ */
+fedex.track({
+  SelectionDetails: {
+    PackageIdentifier: {
+      Type: 'TRACKING_NUMBER_OR_DOORTAG',
+      Value: '123456789012'
+    }
+  }
+}, function(err, res) {
+  if(err) {
+    return console.log(err);
+  }
+
+  console.log(res);
+});
+
+/**
+ * Ship
+ */
+fedex.ship({
+
+}, function(err, res) {
+  if(err) {
+    return console.log(err);
+  }
+
+  console.log(res);
+});
+
+/**
+ * Freight Rates
+ */
+fedex.freight_rates({
+
 }, function(err, res) {
   if(err) {
     return console.log(err);
