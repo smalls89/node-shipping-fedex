@@ -1,4 +1,4 @@
-#shipping-ups
+#shipping-fedex
 
 ## Install
 
