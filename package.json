@@ -25,6 +25,6 @@
   "dependencies": {
     "extend": "^1.2.1",
     "soap": "^0.8.0",
-    "xml2json": "~0.3.2"
+    "xml2json": "~0.6.1"
   }
 }
