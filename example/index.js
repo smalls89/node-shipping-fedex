@@ -197,3 +197,44 @@ fedex.freight_rates({
 
   console.log(res);
 });
+
+/**
+ * Address Validation Service
+ * NOTE:  The Address Validation Service requires you to complete the certification process before it can be enabled
+ * for your account. Contact FedEx Customer Support to initiate the process. Additional details are located within the
+ * FedEx Developer center.
+ */
+fedex.addressvalidation({
+  InEffectAsOfTimestamp: new Date(new Date().getTime() + (24 * 60 * 60 * 1000)).toISOString(),
+  AddressesToValidate: [
+    {
+      Address: {
+        StreetLines: [
+          '9325 Center Lake Dr',
+          'Suite 100'
+        ],
+        City: 'Charlotte',
+        StateOrProvinceCode: 'NC',
+        PostalCode: '28216',
+        CountryCode: 'US'
+      }
+    },
+    {
+      Address: {
+        StreetLines: [
+          '601 S College St'
+        ],
+        City: 'Charlotte',
+        StateOrProvinceCode: 'NC',
+        PostalCode: '28202',
+        CountryCode: 'US'
+      }
+    }
+  ]
+}, function (err, res) {
+  if (err) {
+    return console.log(util.inspect(err, {depth: null}));
+  }
+
+  console.log(util.inspect(res, {depth: 4}));
+});
