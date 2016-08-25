@@ -238,3 +238,47 @@ fedex.addressvalidation({
 
   console.log(util.inspect(res, {depth: 4}));
 });
+
+/**
+ * Close
+ */
+
+fedex.groundclose({
+  TimeUpToWhichShipmentsAreToBeClosed: new Date().toISOString()
+}, function(err, res) {
+  if (err) {
+    return console.log(util.inspect(err, {depth: null}));
+  }
+
+  console.log(util.inspect(res, {depth: 4}));
+});
+
+fedex.smartpostclose({
+  HubId: '5751',
+  DestinationCountryCode: 'US', // Always US
+  PickUpCarrier: 'FXSP' // Or FDXG
+}, function(err, res) {
+  if (err) {
+    return console.log(util.inspect(err, {depth: null}));
+  }
+
+  console.log(util.inspect(res, {depth: 4}));
+});
+
+/**
+ * Delete
+ */
+
+fedex.deleteshipment({
+    TrackingId: {
+        TrackingIdType: 'GROUND', // EXPRESS || FEDEX || GROUND || USPS
+        TrackingNumber: '123456789012'
+    },
+    DeletionControl: 'DELETE_ALL_PACKAGES' // or DELETE_ONE_PACKAGE or LEGACY
+}, function(err, res) {
+  if (err) {
+    return console.log(util.inspect(err, {depth: null}));
+  }
+
+  console.log(util.inspect(res, {depth: 4}));
+});
