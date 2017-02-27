@@ -3,7 +3,7 @@
   "version": "0.1.5",
   "description": "FedEx API bindings for Node.JS",
   "author": "uh-sem-blee, Co",
-  "license": "AGPL-3.0",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/uh-sem-blee/node-shipping-fedex"
