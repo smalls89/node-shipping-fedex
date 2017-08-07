@@ -1,6 +1,6 @@
 {
   "name": "shipping-fedex",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "FedEx API bindings for Node.JS",
   "author": "uh-sem-blee, Co",
   "license": "MIT",
