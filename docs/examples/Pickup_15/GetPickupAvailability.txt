@@ -1,0 +1,161 @@
+Request:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v15="http://fedex.com/ws/pickup/v15">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v15:PickupAvailabilityRequest>
+         <v15:WebAuthenticationDetail>
+            <v15:ParentCredential>
+               <v15:Key>INPUT YOUR INFORMATION</v15:Key>
+               <v15:Password>INPUT YOUR INFORMATION</v15:Password>
+            </v15:ParentCredential>
+            <v15:UserCredential>
+               <v15:Key>INPUT YOUR INFORMATION</v15:Key>
+               <v15:Password>INPUT YOUR INFORMATION</v15:Password>
+            </v15:UserCredential>
+         </v15:WebAuthenticationDetail>
+         <v15:ClientDetail>
+            <v15:AccountNumber>INPUT YOUR INFORMATION</v15:AccountNumber>
+            <v15:MeterNumber>INPUT YOUR INFORMATION</v15:MeterNumber>
+            <v15:Localization>
+               <v15:LanguageCode>EN</v15:LanguageCode>
+               <v15:LocaleCode>ES</v15:LocaleCode>
+            </v15:Localization>
+         </v15:ClientDetail>
+         <v15:TransactionDetail>
+            <v15:CustomerTransactionId>pickup_availability</v15:CustomerTransactionId>
+            <v15:Localization>
+               <v15:LanguageCode>EN</v15:LanguageCode>
+               <v15:LocaleCode>ES</v15:LocaleCode>
+            </v15:Localization>
+         </v15:TransactionDetail>
+         <v15:Version>
+            <v15:ServiceId>disp</v15:ServiceId>
+            <v15:Major>15</v15:Major>
+            <v15:Intermediate>0</v15:Intermediate>
+            <v15:Minor>0</v15:Minor>
+         </v15:Version>
+         <v15:PickupAddress>
+            <v15:StreetLines>INPUT YOUR INFORMATION</v15:StreetLines>
+            <v15:City>HAMBURG</v15:City>
+            <v15:StateOrProvinceCode>HH</v15:StateOrProvinceCode>
+            <v15:PostalCode>22415</v15:PostalCode>
+            <v15:CountryCode>DE</v15:CountryCode>
+            <v15:Residential>1</v15:Residential>
+            <v15:GeographicCoordinates>ac vinclis</v15:GeographicCoordinates>
+         </v15:PickupAddress>
+         <v15:PickupRequestType>SAME_DAY</v15:PickupRequestType>
+         <v15:DispatchDate>2016-02-26</v15:DispatchDate>
+         <v15:NumberOfBusinessDays>3</v15:NumberOfBusinessDays>
+         <v15:PackageReadyTime>15:00:00</v15:PackageReadyTime>
+         <v15:CustomerCloseTime>17:00:00</v15:CustomerCloseTime>
+         <v15:Carriers>FDXE</v15:Carriers>
+         <v15:ShipmentAttributes>
+            <v15:ServiceType>PRIORITY_OVERNIGHT</v15:ServiceType>
+            <v15:PackagingType>YOUR_PACKAGING</v15:PackagingType>
+            <v15:Dimensions>
+               <v15:Length>12</v15:Length>
+               <v15:Width>12</v15:Width>
+               <v15:Height>12</v15:Height>
+               <v15:Units>IN</v15:Units>
+            </v15:Dimensions>
+            <v15:Weight>
+               <v15:Units>LB</v15:Units>
+               <v15:Value>150.0</v15:Value>
+            </v15:Weight>
+         </v15:ShipmentAttributes>
+      </v15:PickupAvailabilityRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Reply:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <PickupAvailabilityReply xmlns="http://fedex.com/ws/pickup/v15">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>disp</Source>
+            <Code>0000</Code>
+            <Message>Success</Message>
+            <LocalizedMessage>Success</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>pickup_availability</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>ES</LocaleCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>disp</ServiceId>
+            <Major>15</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <RequestTimestamp>2016-12-13T14:05:00</RequestTimestamp>
+         <Options>
+            <Carrier>FDXE</Carrier>
+            <ScheduleDay>SAME_DAY</ScheduleDay>
+            <Available>true</Available>
+            <PickupDate>2016-12-13</PickupDate>
+            <CutOffTime>17:01:00</CutOffTime>
+            <AccessTime>PT1H30M</AccessTime>
+            <ResidentialAvailable>false</ResidentialAvailable>
+            <CountryRelationship>DOMESTIC</CountryRelationship>
+         </Options>
+         <Options>
+            <Carrier>FDXE</Carrier>
+            <ScheduleDay>SAME_DAY</ScheduleDay>
+            <Available>true</Available>
+            <PickupDate>2016-12-13</PickupDate>
+            <CutOffTime>17:01:00</CutOffTime>
+            <AccessTime>PT1H30M</AccessTime>
+            <ResidentialAvailable>false</ResidentialAvailable>
+            <CountryRelationship>INTERNATIONAL</CountryRelationship>
+         </Options>
+         <Options>
+            <Carrier>FDXE</Carrier>
+            <ScheduleDay>SAME_DAY</ScheduleDay>
+            <Available>true</Available>
+            <PickupDate>2016-12-14</PickupDate>
+            <CutOffTime>17:01:00</CutOffTime>
+            <AccessTime>PT1H30M</AccessTime>
+            <ResidentialAvailable>false</ResidentialAvailable>
+            <CountryRelationship>DOMESTIC</CountryRelationship>
+         </Options>
+         <Options>
+            <Carrier>FDXE</Carrier>
+            <ScheduleDay>SAME_DAY</ScheduleDay>
+            <Available>true</Available>
+            <PickupDate>2016-12-14</PickupDate>
+            <CutOffTime>17:01:00</CutOffTime>
+            <AccessTime>PT1H30M</AccessTime>
+            <ResidentialAvailable>false</ResidentialAvailable>
+            <CountryRelationship>INTERNATIONAL</CountryRelationship>
+         </Options>
+         <Options>
+            <Carrier>FDXE</Carrier>
+            <ScheduleDay>SAME_DAY</ScheduleDay>
+            <Available>true</Available>
+            <PickupDate>2016-12-15</PickupDate>
+            <CutOffTime>17:01:00</CutOffTime>
+            <AccessTime>PT1H30M</AccessTime>
+            <ResidentialAvailable>false</ResidentialAvailable>
+            <CountryRelationship>DOMESTIC</CountryRelationship>
+         </Options>
+         <Options>
+            <Carrier>FDXE</Carrier>
+            <ScheduleDay>SAME_DAY</ScheduleDay>
+            <Available>true</Available>
+            <PickupDate>2016-12-15</PickupDate>
+            <CutOffTime>17:01:00</CutOffTime>
+            <AccessTime>PT1H30M</AccessTime>
+            <ResidentialAvailable>false</ResidentialAvailable>
+            <CountryRelationship>INTERNATIONAL</CountryRelationship>
+         </Options>
+      </PickupAvailabilityReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

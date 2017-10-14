@@ -1,0 +1,24 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ValidateDeliveryReply xmlns="http://fedex.com/ws/ifss/v1">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>ifss</Source>
+            <Code>0000</Code>
+            <Message>Success</Message>
+            <LocalizedMessage>Success</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>ProcessDelivery_25th</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>ifss</ServiceId>
+            <Major>1</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+      </ValidateDeliveryReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

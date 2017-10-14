@@ -1,0 +1,103 @@
+Request:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v8="http://fedex.com/ws/vacs/v8">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v8:ServiceAvailabilityRequest>
+        <v8:WebAuthenticationDetail>
+            <v8:ParentCredential>
+               <v8:Key>${#Project#CspKey}</v8:Key>
+               <v8:Password>${#Project#CspPassword}</v8:Password>
+            </v8:ParentCredential>
+            <v8:UserCredential>
+               <v8:Key>${#Project#UserKey}</v8:Key>
+               <v8:Password>${#Project#UserPassword}</v8:Password>
+            </v8:UserCredential>
+         </v8:WebAuthenticationDetail>
+         <v8:ClientDetail>
+            <v8:AccountNumber>${#Project#AccountNumber}</v8:AccountNumber>
+            <v8:MeterNumber>${#Project#MeterNumber}</v8:MeterNumber>
+
+         </v8:ClientDetail>
+         <v8:TransactionDetail>
+            <v8:CustomerTransactionId>ServiceAvailabilityRequest</v8:CustomerTransactionId>
+         </v8:TransactionDetail>
+         <v8:Version>
+            <v8:ServiceId>vacs</v8:ServiceId>
+            <v8:Major>8</v8:Major>
+            <v8:Intermediate>0</v8:Intermediate>
+            <v8:Minor>0</v8:Minor>
+         </v8:Version>
+         <v8:Origin>
+            <v8:PostalCode>38017</v8:PostalCode>
+            <v8:CountryCode>US</v8:CountryCode>
+         </v8:Origin>
+         <v8:Destination>
+            <v8:PostalCode>05040</v8:PostalCode>
+            <v8:CountryCode>BR</v8:CountryCode>
+         </v8:Destination>
+         <v8:ShipDate>2016-02-23</v8:ShipDate>
+         <v8:CarrierCode>FDXE</v8:CarrierCode>
+      </v8:ServiceAvailabilityRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+
+Response:
+
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ServiceAvailabilityReply xmlns="http://fedex.com/ws/vacs/v8">
+         <HighestSeverity>NOTE</HighestSeverity>
+         <Notifications>
+            <Severity>NOTE</Severity>
+            <Source>vacs</Source>
+            <Code>2002</Code>
+            <Message>Your Packaging was assumed.</Message>
+            <LocalizedMessage>Your Packaging was assumed.</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>ServiceAvailabilityRequest</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>vacs</ServiceId>
+            <Major>8</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <Options>
+            <Service>INTERNATIONAL_PRIORITY</Service>
+            <DestinationStationId>SAOA</DestinationStationId>
+            <DestinationAirportId>VCP</DestinationAirportId>
+         </Options>
+         <Options>
+            <Service>INTERNATIONAL_PRIORITY_DISTRIBUTION</Service>
+            <DestinationStationId>SAOA</DestinationStationId>
+            <DestinationAirportId>VCP</DestinationAirportId>
+         </Options>
+         <Options>
+            <Service>INTERNATIONAL_ECONOMY</Service>
+            <DestinationStationId>SAOA</DestinationStationId>
+            <DestinationAirportId>VCP</DestinationAirportId>
+         </Options>
+         <Options>
+            <Service>INTERNATIONAL_PRIORITY_FREIGHT</Service>
+            <DestinationStationId>GRURT</DestinationStationId>
+            <DestinationAirportId>VCP</DestinationAirportId>
+         </Options>
+         <Options>
+            <Service>INTERNATIONAL_ECONOMY_FREIGHT</Service>
+            <DestinationStationId>GRURT</DestinationStationId>
+            <DestinationAirportId>VCP</DestinationAirportId>
+         </Options>
+         <Options>
+            <Service>INTERNATIONAL_DISTRIBUTION_FREIGHT</Service>
+            <DestinationStationId>GRURT</DestinationStationId>
+            <DestinationAirportId>VCP</DestinationAirportId>
+         </Options>
+      </ServiceAvailabilityReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,28 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <CloseWithDocumentsReply xmlns="http://fedex.com/ws/close/v5">
+         <HighestSeverity>WARNING</HighestSeverity>
+         <Notifications>
+            <Severity>WARNING</Severity>
+            <Source>clos</Source>
+            <Code>9805</Code>
+            <Message>NO Shipment to CLOSE</Message>
+            <LocalizedMessage>NO Shipment to CLOSE</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>CloseWithDocumentsRequest_v5</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>EN</LocaleCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>clos</ServiceId>
+            <Major>5</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+      </CloseWithDocumentsReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

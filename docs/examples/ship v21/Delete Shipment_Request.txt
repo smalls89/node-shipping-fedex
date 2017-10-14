@@ -1,0 +1,66 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v21="http://fedex.com/ws/ship/v21">
+   <soapenv:Header></soapenv:Header>
+   <soapenv:Body>
+      <v21:DeleteShipmentRequest>
+         <v21:WebAuthenticationDetail>
+            <v21:ParentCredential>
+               <v21:Key>INPUT YOUR INFORMATION</v21:Key>
+               <v21:Password>INPUT YOUR INFORMATION</v21:Password>
+            </v21:ParentCredential>
+            <v21:UserCredential>
+               <v21:Key>INPUT YOUR INFORMATION</v21:Key>
+               <v21:Password>INPUT YOUR INFORMATION</v21:Password>
+            </v21:UserCredential>
+         </v21:WebAuthenticationDetail>
+         <v21:ClientDetail>
+              <v21:AccountNumber>Input Your Informaion</v21:AccountNumber>
+            <v21:MeterNumber>Input Your Informaion</v21:MeterNumber>
+            <v21:Localization>
+               <v21:LanguageCode>EN</v21:LanguageCode>
+               <v21:LocaleCode>EM</v21:LocaleCode>
+            </v21:Localization>
+         </v21:ClientDetail>
+         <v21:TransactionDetail>
+            <v21:CustomerTransactionId>DeleteShipmentRequest_v21</v21:CustomerTransactionId>
+         </v21:TransactionDetail>
+         <v21:Version>
+            <v21:ServiceId>ship</v21:ServiceId>
+            <v21:Major>21</v21:Major>
+            <v21:Intermediate>0</v21:Intermediate>
+            <v21:Minor>0</v21:Minor>
+         </v21:Version>
+        <v21:ShipTimestamp>2016-12-12T12:34:56-06:00</v21:ShipTimestamp>
+         <v21:TrackingId>
+            <v21:TrackingIdType>EXPRESS</v21:TrackingIdType>
+            <v21:FormId>Input Your Informaion</v21:FormId>
+            <v21:TrackingNumber>Input Your Informaion</v21:TrackingNumber>
+         </v21:TrackingId>
+         <v21:DeletionControl>DELETE_ALL_PACKAGES</v21:DeletionControl>
+      </v21:DeleteShipmentRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ShipmentReply xmlns="http://fedex.com/ws/ship/v21">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>ship</Source>
+            <Code>0000</Code>
+            <Message>Success</Message>
+            <LocalizedMessage>Success</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>DeleteShipmentRequest_v21</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>ship</ServiceId>
+            <Major>21</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+      </ShipmentReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

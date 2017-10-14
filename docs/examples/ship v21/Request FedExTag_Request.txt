@@ -1,0 +1,169 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v21="http://fedex.com/ws/ship/v21">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v21:ProcessTagRequest>
+          <v21:WebAuthenticationDetail>
+            <v21:ParentCredential>
+               <v21:Key>INPUT YOUR INFORMATION</v21:Key>
+               <v21:Password>INPUT YOUR INFORMATION</v21:Password>
+            </v21:ParentCredential>
+            <v21:UserCredential>
+               <v21:Key>INPUT YOUR INFORMATION</v21:Key>
+               <v21:Password>INPUT YOUR INFORMATION</v21:Password>
+            </v21:UserCredential>
+         </v21:WebAuthenticationDetail>
+         <v21:ClientDetail>
+             <v21:AccountNumber>Input Your Information</v21:AccountNumber>
+            <v21:MeterNumber>Input Your Information</v21:MeterNumber>
+         </v21:ClientDetail>
+         <v21:TransactionDetail>
+            <v21:CustomerTransactionId>ProcessTag_v21</v21:CustomerTransactionId>
+         </v21:TransactionDetail>
+         <v21:Version>
+            <v21:ServiceId>ship</v21:ServiceId>
+            <v21:Major>21</v21:Major>
+            <v21:Intermediate>0</v21:Intermediate>
+            <v21:Minor>0</v21:Minor>
+         </v21:Version>
+         <v21:RequestedShipment>
+           <v21:ShipTimestamp>2016-12-12T15:30:47-05:00</v21:ShipTimestamp>
+            <v21:DropoffType>REGULAR_PICKUP</v21:DropoffType>
+            <v21:ServiceType>FEDEX_2_DAY_AM</v21:ServiceType>
+            <v21:PackagingType>YOUR_PACKAGING</v21:PackagingType>
+            <v21:TotalWeight>
+               <v21:Units>LB</v21:Units>
+               <v21:Value>149.0</v21:Value>
+            </v21:TotalWeight>
+            <v21:TotalInsuredValue>
+               <v21:Currency>USD</v21:Currency>
+               <v21:Amount>100.00</v21:Amount>
+            </v21:TotalInsuredValue>
+            <v21:Shipper>
+               <v21:Contact>
+                  <v21:PersonName>Input Your Information</v21:PersonName>
+                  <v21:CompanyName>Input Your Information</v21:CompanyName>
+                  <v21:PhoneNumber>Input Your Information</v21:PhoneNumber>
+                  <v21:EMailAddress>Input Your Information</v21:EMailAddress>
+               </v21:Contact>
+               <v21:Address>
+                   <v21:StreetLines>Input Your Information</v21:StreetLines>
+                  <v21:City>MEMPHIS</v21:City>
+                  <v21:StateOrProvinceCode>TN</v21:StateOrProvinceCode>
+                  <v21:PostalCode>38101</v21:PostalCode>
+                  <v21:CountryCode>US</v21:CountryCode>
+               </v21:Address>
+            </v21:Shipper>
+            <v21:Recipient>
+               <v21:Contact>
+                 <v21:PersonName>Input Your Information</v21:PersonName>
+                  <v21:CompanyName>Input Your Information</v21:CompanyName>
+                  <v21:PhoneNumber>Input Your Information</v21:PhoneNumber>
+                  <v21:EMailAddress>Input Your Information</v21:EMailAddress>
+               </v21:Contact>
+               <v21:Address>
+                  <v21:StreetLines>Input Your Information</v21:StreetLines>
+                  <v21:City>Memphis</v21:City>
+                  <v21:StateOrProvinceCode>TN</v21:StateOrProvinceCode>
+                  <v21:PostalCode>38018</v21:PostalCode>
+                  <v21:CountryCode>US</v21:CountryCode>
+               </v21:Address>
+            </v21:Recipient>
+            <v21:ShippingChargesPayment>
+               <v21:PaymentType>SENDER</v21:PaymentType>
+               <v21:Payor>
+                  <v21:ResponsibleParty>
+                     <v21:AccountNumber>Input Your Information</v21:AccountNumber>
+                     <v21:Contact>
+                        <v21:ContactId/>
+                        <v21:PersonName/>
+                        <v21:CompanyName/>
+                        <v21:PhoneNumber/>
+                        <v21:EMailAddress/>
+                     </v21:Contact>
+                  </v21:ResponsibleParty>
+               </v21:Payor>
+            </v21:ShippingChargesPayment>
+            <v21:SpecialServicesRequested>
+               <v21:SpecialServiceTypes>RETURN_SHIPMENT</v21:SpecialServiceTypes>
+               <v21:ReturnShipmentDetail>
+                  <v21:ReturnType>FEDEX_TAG</v21:ReturnType>
+               </v21:ReturnShipmentDetail>
+            </v21:SpecialServicesRequested>
+            <v21:PickupDetail>
+               <v21:ReadyDateTime>2016-12-12T12:30:47-05:00</v21:ReadyDateTime>
+               <v21:LatestPickupDateTime>2016-12-12T14:30:47-05:00</v21:LatestPickupDateTime>
+               <v21:CourierInstructions>HandleWithCare</v21:CourierInstructions>
+            </v21:PickupDetail>
+            <v21:LabelSpecification>
+               <v21:LabelFormatType>COMMON2D</v21:LabelFormatType>
+               <v21:LabelStockType>PAPER_4X6</v21:LabelStockType>
+               <v21:LabelPrintingOrientation>BOTTOM_EDGE_OF_TEXT_FIRST</v21:LabelPrintingOrientation>
+            </v21:LabelSpecification>
+            <v21:RateRequestTypes>LIST</v21:RateRequestTypes>
+            <v21:PackageCount>1</v21:PackageCount>
+            <v21:RequestedPackageLineItems>
+               <v21:SequenceNumber>1</v21:SequenceNumber>
+               <v21:InsuredValue>
+                  <v21:Currency>USD</v21:Currency>
+                  <v21:Amount>100.00</v21:Amount>
+               </v21:InsuredValue>
+               <v21:Weight>
+                  <v21:Units>LB</v21:Units>
+                  <v21:Value>50.00</v21:Value>
+               </v21:Weight>
+               <v21:ItemDescription>String</v21:ItemDescription>
+            </v21:RequestedPackageLineItems>
+         </v21:RequestedShipment>
+      </v21:ProcessTagRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ProcessTagReply xmlns="http://fedex.com/ws/ship/v21">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>ship</Source>
+            <Code>0000</Code>
+            <Message>Success</Message>
+            <LocalizedMessage>Success</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>ProcessTag_v21</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>ship</ServiceId>
+            <Major>21</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <CompletedShipmentDetail>
+            <UsDomestic>true</UsDomestic>
+            <MasterTrackingId>
+               <TrackingIdType>EXPRESS</TrackingIdType>
+               <TrackingNumber>Input Your Information</TrackingNumber>
+            </MasterTrackingId>
+            <TagDetail>
+               <ConfirmationNumber>121</ConfirmationNumber>
+               <AccessTime>PT2H0M</AccessTime>
+               <CutoffTime>18:00:00</CutoffTime>
+               <Location>NQAA</Location>
+               <DeliveryCommitment>2015-12-31T10:30:00</DeliveryCommitment>
+               <DispatchDate>2015-12-29</DispatchDate>
+            </TagDetail>
+            <CompletedPackageDetails>
+               <SequenceNumber>1</SequenceNumber>
+               <TrackingIds>
+                  <TrackingIdType>EXPRESS</TrackingIdType>
+                  <FormId>0203</FormId>
+                  <TrackingNumber>Input Your Information</TrackingNumber>
+               </TrackingIds>
+               <GroupNumber>0</GroupNumber>
+            </CompletedPackageDetails>
+         </CompletedShipmentDetail>
+      </ProcessTagReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

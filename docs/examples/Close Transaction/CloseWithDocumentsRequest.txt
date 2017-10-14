@@ -1,0 +1,51 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v5="http://fedex.com/ws/close/v5">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v5:CloseWithDocumentsRequest>
+         <v5:WebAuthenticationDetail>
+             <v5:ParentCredential>
+               <v5:Key>Input Your Information</v5:Key>
+               <v5:Password>Input Your Information</v5:Password>
+            </v5:ParentCredential>
+            <v5:UserCredential>
+               <v5:Key>Input Your Information</v5:Key>
+               <v5:Password>Input Your Information</v5:Password>
+            </v5:UserCredential>
+         </v5:WebAuthenticationDetail>
+         <v5:ClientDetail>
+            <v5:AccountNumber>Input Your Information</v5:AccountNumber>
+            <v5:MeterNumber>Input Your Information</v5:MeterNumber>
+            <v5:Localization>
+               <v5:LanguageCode>EN</v5:LanguageCode>
+               <v5:LocaleCode>EN</v5:LocaleCode>
+            </v5:Localization>
+         </v5:ClientDetail>
+         <v5:TransactionDetail>
+            <v5:CustomerTransactionId>CloseWithDocumentsRequest_v5</v5:CustomerTransactionId>
+            <v5:Localization>
+               <v5:LanguageCode>EN</v5:LanguageCode>
+               <v5:LocaleCode>EN</v5:LocaleCode>
+            </v5:Localization>
+         </v5:TransactionDetail>
+         <v5:Version>
+            <v5:ServiceId>clos</v5:ServiceId>
+            <v5:Major>5</v5:Major>
+            <v5:Intermediate>0</v5:Intermediate>
+            <v5:Minor>0</v5:Minor>
+         </v5:Version>
+         <v5:ActionType>CLOSE</v5:ActionType>
+         <v5:ProcessingOptions>
+            <v5:Options>ERROR_IF_OPEN_SHIPMENTS_FOUND</v5:Options>
+         </v5:ProcessingOptions>
+         <v5:CarrierCode>FDXE</v5:CarrierCode>
+         <v5:ReprintCloseDate>2015-12-29T11:30:47-05:00</v5:ReprintCloseDate>
+         <v5:ManifestReferenceDetail>
+            <v5:Type>CUSTOMER_REFERENCE</v5:Type>
+            <v5:Value>string</v5:Value>
+         </v5:ManifestReferenceDetail>
+         <v5:CloseDocumentSpecification>
+            <v5:CloseDocumentTypes>MANIFEST</v5:CloseDocumentTypes>
+         </v5:CloseDocumentSpecification>
+      </v5:CloseWithDocumentsRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

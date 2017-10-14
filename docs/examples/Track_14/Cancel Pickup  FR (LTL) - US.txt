@@ -1,0 +1,90 @@
+Request:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v15="http://fedex.com/ws/pickup/v15">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v15:CancelPickupRequest>
+         <v15:WebAuthenticationDetail>
+            <v15:ParentCredential>
+               <v15:Key>Input Your Information</v15:Key>
+               <v15:Password>Input Your Information</v15:Password>
+            </v15:ParentCredential>
+            <v15:UserCredential>
+               <v15:Key>Input Your Information</v15:Key>
+               <v15:Password>Input Your Information</v15:Password>
+            </v15:UserCredential>
+         </v15:WebAuthenticationDetail>
+         <v15:ClientDetail>
+            <v15:AccountNumber>Input Your Information</v15:AccountNumber>
+            <v15:MeterNumber>Input Your Information</v15:MeterNumber>
+            <v15:Localization>
+               <v15:LanguageCode>EN</v15:LanguageCode>
+               <v15:LocaleCode>en</v15:LocaleCode>
+            </v15:Localization>
+         </v15:ClientDetail>
+         <v15:TransactionDetail>
+            <v15:CustomerTransactionId>v15 CancelPickup Feight</v15:CustomerTransactionId>
+            <v15:Localization>
+               <v15:LanguageCode>EN</v15:LanguageCode>
+               <v15:LocaleCode>en</v15:LocaleCode>
+            </v15:Localization>
+         </v15:TransactionDetail>
+         <v15:Version>
+            <v15:ServiceId>disp</v15:ServiceId>
+            <v15:Major>15</v15:Major>
+            <v15:Intermediate>0</v15:Intermediate>
+            <v15:Minor>0</v15:Minor>
+         </v15:Version>
+         <v15:CarrierCode>FXFR</v15:CarrierCode>
+         <v15:PickupConfirmationNumber>Input Your Information</v15:PickupConfirmationNumber>
+         <v15:ScheduledDate>Input Your Information</v15:ScheduledDate>
+         <v15:Location>Input Your Information</v15:Location>
+         <v15:Remarks>Preet</v15:Remarks>
+         <v15:ShippingChargesPayment>
+            <v15:PaymentType>CASH</v15:PaymentType>
+            <v15:Payor>
+               <v15:ResponsibleParty>
+                  <v15:AccountNumber>Input Your Information</v15:AccountNumber>
+               </v15:ResponsibleParty>
+            </v15:Payor>
+            <v15:Amount>
+               <v15:Currency>USD</v15:Currency>
+               <v15:Amount>3.00</v15:Amount>
+            </v15:Amount>
+         </v15:ShippingChargesPayment>
+         <v15:Reason>TXT</v15:Reason>
+         <v15:ContactName>Input Your Information</v15:ContactName>
+      </v15:CancelPickupRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Reply:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <CancelPickupReply xmlns="http://fedex.com/ws/pickup/v15">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>disp</Source>
+            <Code>0000</Code>
+            <Message>Success</Message>
+            <LocalizedMessage>Success</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>v15 CancelPickup Feight</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>en</LocaleCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>disp</ServiceId>
+            <Major>15</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+      </CancelPickupReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

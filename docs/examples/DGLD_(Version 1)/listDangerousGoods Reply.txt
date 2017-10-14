@@ -1,0 +1,32 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ListDangerousGoodsReply xmlns="http://fedex.com/ws/dgld/v1">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>dgds</Source>
+            <Code>000</Code>
+            <Message>SUCCESS</Message>
+            <LocalizedMessage>SUCCESS</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>ListDangerousGoodsRequest-Express_APR24</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>dgds</ServiceId>
+            <Major>1</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <Regulation>IATA</Regulation>
+         <Accessibility>ACCESSIBLE</Accessibility>
+         <Options>HAZARDOUS_MATERIALS</Options>
+         <Details>
+            <TrackingNumbers>Input your Inforrmation</TrackingNumbers>
+            <Accessibility>ACCESSIBLE</Accessibility>
+            <Options>HAZARDOUS_MATERIALS</Options>
+         </Details>
+      </ListDangerousGoodsReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

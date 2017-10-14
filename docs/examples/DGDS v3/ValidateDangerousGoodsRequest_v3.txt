@@ -1,0 +1,172 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v3="http://fedex.com/ws/dgds/v3">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v3:ValidateDangerousGoodsRequest>
+         <v3:WebAuthenticationDetail>
+            <v3:ParentCredential>
+               <v3:Key>INPUT YOUR INFORMATION</v3:Key>
+               <v3:Password>INPUT YOUR INFORMATION</v3:Password>
+            </v3:ParentCredential>
+            <v3:UserCredential>
+               <v3:Key>INPUT YOUR INFORMATION</v3:Key>
+               <v3:Password>INPUT YOUR INFORMATION</v3:Password>
+            </v3:UserCredential>
+         </v3:WebAuthenticationDetail>
+         <v3:ClientDetail>
+            <v3:AccountNumber>INPUT YOUR INFORMATION</v3:AccountNumber>
+            <v3:MeterNumber>INPUT YOUR INFORMATION</v3:MeterNumber>
+                   <v3:Region>US</v3:Region>
+            <v3:Localization>
+               <v3:LanguageCode>EN</v3:LanguageCode>
+               <v3:LocaleCode>US</v3:LocaleCode>
+            </v3:Localization>
+         </v3:ClientDetail>
+         <v3:TransactionDetail>
+            <v3:CustomerTransactionId>validateDangerousGoods-Express</v3:CustomerTransactionId>
+         </v3:TransactionDetail>
+         <v3:Version>
+            <v3:ServiceId>dgds</v3:ServiceId>
+            <v3:Major>3</v3:Major>
+            <v3:Intermediate>0</v3:Intermediate>
+            <v3:Minor>0</v3:Minor>
+         </v3:Version>
+         <v3:ShipmentDetail>
+            <v3:Origin>
+               <v3:StreetLines>INPUT YOUR INFORMATION</v3:StreetLines>
+               <v3:City>MEMPHIS</v3:City>
+               <v3:StateOrProvinceCode>TN</v3:StateOrProvinceCode>
+               <v3:PostalCode>381167510</v3:PostalCode>
+               <v3:CountryCode>US</v3:CountryCode>
+               <v3:Residential>1</v3:Residential>
+            </v3:Origin>
+            <v3:Destination>
+               <v3:StreetLines>INPUT YOUR INFORMATION</v3:StreetLines>
+               <v3:City>Colorado Springs</v3:City>
+               <v3:StateOrProvinceCode>CO</v3:StateOrProvinceCode>
+               <v3:PostalCode>80903</v3:PostalCode>
+               <v3:CountryCode>US</v3:CountryCode>
+            </v3:Destination>
+            <v3:CarrierCode>FDXE</v3:CarrierCode>
+            <v3:ServiceType>PRIORITY_OVERNIGHT</v3:ServiceType>
+            <v3:ShipDate>2016-12-09</v3:ShipDate>
+            <v3:Offeror>Gagan</v3:Offeror>
+            <v3:Signatory>
+               <v3:ContactName>Preet</v3:ContactName>
+               <v3:Title>Mr</v3:Title>
+               <v3:Place>MEMPHIS</v3:Place>
+            </v3:Signatory>
+            <v3:InfectiousSubstanceResponsibleContact>
+               <v3:ContactId>GD1057</v3:ContactId>
+               <v3:PersonName>INPUT YOUR INFORMATION</v3:PersonName>
+               <v3:Title>Mr.</v3:Title>
+               <v3:CompanyName>D Company</v3:CompanyName>
+               <v3:PhoneNumber>INPUT YOUR INFORMATION</v3:PhoneNumber>
+               <v3:PhoneExtension>02033469</v3:PhoneExtension>
+               <v3:PagerNumber>INPUT YOUR INFORMATION</v3:PagerNumber>
+               <v3:FaxNumber>INPUT YOUR INFORMATION</v3:FaxNumber>
+               <v3:EMailAddress>Dhillon@DG.com</v3:EMailAddress>
+            </v3:InfectiousSubstanceResponsibleContact>
+            <v3:EmergencyContactNumber>INPUT YOUR INFORMATION</v3:EmergencyContactNumber>
+            <v3:AircraftCategoryType>CARGO_AIRCRAFT_ONLY</v3:AircraftCategoryType>
+         </v3:ShipmentDetail>
+         <v3:HandlingUnitGroups>
+            <v3:Id>UDDG</v3:Id>
+            <v3:NumberOfHandlingUnits>1</v3:NumberOfHandlingUnits>
+            <v3:TrackingNumberUnits>
+               <v3:TrackingIds>
+                  <v3:TrackingIdType>FEDEX</v3:TrackingIdType>
+                  <v3:TrackingNumber>INPUT YOUR INFORMATION</v3:TrackingNumber>
+               </v3:TrackingIds>
+            </v3:TrackingNumberUnits>
+             <v3:HandlingUnit>
+               <v3:Attributes>OVERPACK</v3:Attributes>
+               <v3:ContainerGroups>
+                  <v3:Container>
+                     <v3:ContainerType>Aluminum Boxes</v3:ContainerType>
+                     <v3:Commodities>
+                        <v3:Description>
+                           <v3:IdType>UN</v3:IdType>
+                           <v3:Id>1845</v3:Id>
+                           <v3:SequenceNumber>2</v3:SequenceNumber>
+                           <v3:PackingGroup>UNDEFINED</v3:PackingGroup>
+                           <v3:PackingInstructions>954</v3:PackingInstructions>
+                           <v3:AircraftCategoryType>PASSENGER_AND_CARGO_AIRCRAFT</v3:AircraftCategoryType>
+                           <v3:ProperShippingName>Dry ice</v3:ProperShippingName>
+                           <v3:PrimaryClass>9</v3:PrimaryClass>
+                           <v3:Percentage>0.0</v3:Percentage>
+                        </v3:Description>
+                        <v3:Quantity>
+                           <v3:Amount>5</v3:Amount>
+                           <v3:Units>KG</v3:Units>
+                        </v3:Quantity>
+                     </v3:Commodities>
+                  </v3:Container>
+               </v3:ContainerGroups>
+            </v3:HandlingUnit>
+         </v3:HandlingUnitGroups>
+      </v3:ValidateDangerousGoodsRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ValidateDangerousGoodsReply xmlns="http://fedex.com/ws/dgds/v3">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>dgds</Source>
+            <Code>000</Code>
+            <Message>SUCCESS</Message>
+            <LocalizedMessage>SUCCESS</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>validateDangerousGoods-Express</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>dgds</ServiceId>
+            <Major>2</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <CompletedShipmentDetail>
+            <Regulation>IATA</Regulation>
+            <RegulationAttributes>DRY_ICE_DECLARATION_REQUIRED</RegulationAttributes>
+            <TotalHandlingUnitCount>1</TotalHandlingUnitCount>
+            <AircraftCategoryType>PASSENGER_AND_CARGO_AIRCRAFT</AircraftCategoryType>
+            <DangerousGoodsDescriptors>DRY_ICE</DangerousGoodsDescriptors>
+            <Options>HAZARDOUS_MATERIALS</Options>
+            <ShipmentDryIceDetail>
+               <PackageCount>1</PackageCount>
+               <TotalWeight>
+                  <Units>KG</Units>
+                  <Value>5.0</Value>
+               </TotalWeight>
+            </ShipmentDryIceDetail>
+         </CompletedShipmentDetail>
+         <CompletedHandlingUnitGroups>
+            <Id>UDDG</Id>
+            <NumberOfHandlingUnits>1</NumberOfHandlingUnits>
+            <HandlingUnitShippingDetail>
+               <TrackingNumberUnits>
+                  <TrackingIds>
+                     <TrackingIdType>FEDEX</TrackingIdType>
+                     <TrackingNumber>INPUT YOUR INFORMATION</TrackingNumber>
+                  </TrackingIds>
+               </TrackingNumberUnits>
+               <AircraftCategoryType>PASSENGER_AND_CARGO_AIRCRAFT</AircraftCategoryType>
+               <DangerousGoodsDescriptors>DRY_ICE</DangerousGoodsDescriptors>
+               <Options>HAZARDOUS_MATERIALS</Options>
+               <DryIceWeight>
+                  <Units>KG</Units>
+                  <Value>5.0</Value>
+               </DryIceWeight>
+            </HandlingUnitShippingDetail>
+         </CompletedHandlingUnitGroups>
+      </ValidateDangerousGoodsReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+

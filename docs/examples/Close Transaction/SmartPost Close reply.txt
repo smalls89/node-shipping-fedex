@@ -1,0 +1,24 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <SmartPostCloseReply xmlns="http://fedex.com/ws/close/v5">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>clos</Source>
+            <Code>0000</Code>
+            <Message>Success</Message>
+            <LocalizedMessage>Success</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>TC_01_Smartpost_CLOSE</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>clos</ServiceId>
+            <Major>5</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+      </SmartPostCloseReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

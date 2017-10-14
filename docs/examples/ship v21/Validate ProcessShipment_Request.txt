@@ -1,0 +1,175 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v21="http://fedex.com/ws/ship/v21">
+   <soapenv:Header></soapenv:Header>
+   <soapenv:Body>
+      <v21:ValidateShipmentRequest>
+      <v21:WebAuthenticationDetail>
+            <v21:ParentCredential>
+               <v21:Key>INPUT YOUR INFORMATION</v21:Key>
+               <v21:Password>INPUT YOUR INFORMATION</v21:Password>
+            </v21:ParentCredential>
+            <v21:UserCredential>
+               <v21:Key>INPUT YOUR INFORMATION</v21:Key>
+               <v21:Password>INPUT YOUR INFORMATION</v21:Password>
+            </v21:UserCredential>
+         </v21:WebAuthenticationDetail>
+         <v21:ClientDetail>
+           <v21:AccountNumber>Input Your Information</v21:AccountNumber>
+            <v21:MeterNumber>Input Your Information</v21:MeterNumber>
+         </v21:ClientDetail>
+         <v21:TransactionDetail>
+            <v21:CustomerTransactionId>Input Your Information</v21:CustomerTransactionId>
+         </v21:TransactionDetail>
+         <v21:Version>
+            <v21:ServiceId>ship</v21:ServiceId>
+            <v21:Major>21</v21:Major>
+            <v21:Intermediate>0</v21:Intermediate>
+            <v21:Minor>0</v21:Minor>
+         </v21:Version>
+         <v21:RequestedShipment>
+            <v21:ShipTimestamp>2016-12-12T12:34:56-06:00</v21:ShipTimestamp>
+            <v21:DropoffType>REGULAR_PICKUP</v21:DropoffType>
+            <v21:ServiceType>INTERNATIONAL_PRIORITY</v21:ServiceType>
+            <v21:PackagingType>YOUR_PACKAGING</v21:PackagingType>
+            <v21:PreferredCurrency>USD</v21:PreferredCurrency>
+            <v21:Shipper>
+               <v21:Contact>
+                   <v21:PersonName>Input Your Information</v21:PersonName>
+                  <v21:CompanyName>Input Your Information</v21:CompanyName>
+                  <v21:PhoneNumber>Input Your Information</v21:PhoneNumber>
+                  <v21:EMailAddress>Input Your Information</v21:EMailAddress>
+               </v21:Contact>
+               <v21:Address>
+                <v21:StreetLines>Input Your Information</v21:StreetLines>
+                  <v21:City>MEMPHIS</v21:City>
+                  <v21:StateOrProvinceCode>TN</v21:StateOrProvinceCode>
+                  <v21:PostalCode>38101</v21:PostalCode>
+                  <v21:CountryCode>US</v21:CountryCode>
+               </v21:Address>
+            </v21:Shipper>
+            <v21:Recipient>
+               <v21:Contact>
+                  <v21:PersonName>Input Your Information</v21:PersonName>
+                  <v21:CompanyName>Input Your Information</v21:CompanyName>
+                  <v21:PhoneNumber>Input Your Information</v21:PhoneNumber>
+                  <v21:EMailAddress>Input Your Information</v21:EMailAddress>
+               </v21:Contact>
+               <v21:Address>
+                  <v21:StreetLines>Input Your Information</v21:StreetLines>
+                  <v21:StreetLines>Input Your Information</v21:StreetLines>
+                  <v21:City>RICHMOND</v21:City>
+                  <v21:StateOrProvinceCode>BC</v21:StateOrProvinceCode>
+                  <v21:PostalCode>V7C4v7</v21:PostalCode>
+                  <v21:CountryCode>CA</v21:CountryCode>
+               </v21:Address>
+            </v21:Recipient>
+            <v21:ShippingChargesPayment>
+               <v21:PaymentType>SENDER</v21:PaymentType>
+               <v21:Payor>
+                  <v21:ResponsibleParty>
+                     <v21:AccountNumber>Input Your Information</v21:AccountNumber>
+                     <v21:Contact>
+                        <v21:ContactId>12345</v21:ContactId>
+                        <v21:PersonName>Input Your Information</v21:PersonName>
+                     </v21:Contact>
+                  </v21:ResponsibleParty>
+               </v21:Payor>
+            </v21:ShippingChargesPayment>
+            <v21:CustomsClearanceDetail>
+               <v21:DutiesPayment>
+                  <v21:PaymentType>SENDER</v21:PaymentType>
+                  <v21:Payor>
+                     <v21:ResponsibleParty>
+                        <v21:AccountNumber>Input Your Information</v21:AccountNumber>
+                           <v21:Contact>
+                           <v21:ContactId>12345</v21:ContactId>
+                           <v21:PersonName>Input Your Information</v21:PersonName>
+                        </v21:Contact>
+                     </v21:ResponsibleParty>
+                  </v21:Payor>
+               </v21:DutiesPayment>
+               <v21:DocumentContent>DOCUMENTS_ONLY</v21:DocumentContent>
+               <v21:CustomsValue>
+                  <v21:Currency>USD</v21:Currency>
+                  <v21:Amount>100.00</v21:Amount>
+               </v21:CustomsValue>
+               <v21:CommercialInvoice>
+                  <v21:TermsOfSale>FOB</v21:TermsOfSale>
+               </v21:CommercialInvoice>
+               <v21:Commodities>
+                  <v21:NumberOfPieces>1</v21:NumberOfPieces>
+                  <v21:Description>ABCD</v21:Description>
+                  <v21:CountryOfManufacture>US</v21:CountryOfManufacture>
+                  <v21:Weight>
+                     <v21:Units>LB</v21:Units>
+                     <v21:Value>1.0</v21:Value>
+                  </v21:Weight>
+                  <v21:Quantity>1</v21:Quantity>
+                  <v21:QuantityUnits>cm</v21:QuantityUnits>
+                  <v21:UnitPrice>
+                     <v21:Currency>USD</v21:Currency>
+                     <v21:Amount>1.000000</v21:Amount>
+                  </v21:UnitPrice>
+                  <v21:CustomsValue>
+                     <v21:Currency>USD</v21:Currency>
+                     <v21:Amount>100.000000</v21:Amount>
+                  </v21:CustomsValue>
+               </v21:Commodities>
+               <v21:ExportDetail>
+                  <v21:ExportComplianceStatement>30.37(f)</v21:ExportComplianceStatement>
+               </v21:ExportDetail>
+            </v21:CustomsClearanceDetail>
+            <v21:LabelSpecification>
+               <v21:LabelFormatType>COMMON2D</v21:LabelFormatType>
+               <v21:ImageType>PNG</v21:ImageType>
+               <v21:LabelStockType>PAPER_7X4.75</v21:LabelStockType>
+            </v21:LabelSpecification>
+            <v21:RateRequestTypes>LIST</v21:RateRequestTypes>
+            <v21:PackageCount>1</v21:PackageCount>
+            <v21:RequestedPackageLineItems>
+               <v21:SequenceNumber>1</v21:SequenceNumber>
+               <v21:Weight>
+                  <v21:Units>LB</v21:Units>
+                  <v21:Value>20.0</v21:Value>
+               </v21:Weight>
+               <v21:Dimensions>
+                  <v21:Length>12</v21:Length>
+                  <v21:Width>12</v21:Width>
+                  <v21:Height>12</v21:Height>
+                  <v21:Units>IN</v21:Units>
+               </v21:Dimensions>
+               <v21:CustomerReferences>
+                  <v21:CustomerReferenceType>CUSTOMER_REFERENCE</v21:CustomerReferenceType>
+                  <v21:Value>string</v21:Value>
+               </v21:CustomerReferences>
+            </v21:RequestedPackageLineItems>
+         </v21:RequestedShipment>
+      </v21:ValidateShipmentRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Reply:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ShipmentReply xmlns="http://fedex.com/ws/ship/v21">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>ship</Source>
+            <Code>0000</Code>
+            <Message>Success</Message>
+            <LocalizedMessage>Success</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>123790</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>ship</ServiceId>
+            <Major>21</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+      </ShipmentReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,82 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v3="http://fedex.com/ws/dgds/v3">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v3:DeleteDangerousGoodsHandlingUnitRequest>
+         <v3:WebAuthenticationDetail>
+            <v3:ParentCredential>
+               <v3:Key>INPUT YOUR INFORMATION</v3:Key>
+               <v3:Password>INPUT YOUR INFORMATION</v3:Password>
+            </v3:ParentCredential>
+            <v3:UserCredential>
+               <v3:Key>INPUT YOUR INFORMATION</v3:Key>
+               <v3:Password>INPUT YOUR INFORMATION</v3:Password>
+            </v3:UserCredential>
+         </v3:WebAuthenticationDetail>
+         <v3:ClientDetail>
+            <v3:AccountNumber>INPUT YOUR INFORMATION</v3:AccountNumber>
+            <v3:MeterNumber>INPUT YOUR INFORMATION</v3:MeterNumber>
+            <v3:Region>CA</v3:Region>
+            <v3:Localization>
+               <v3:LanguageCode>EN</v3:LanguageCode>
+               <v3:LocaleCode>US</v3:LocaleCode>
+            </v3:Localization>
+         </v3:ClientDetail>
+         <v3:TransactionDetail>
+            <v3:CustomerTransactionId>DeleteDangerousGoodsHandlingUnit-Express</v3:CustomerTransactionId>
+         </v3:TransactionDetail>
+         <v3:Version>
+            <v3:ServiceId>dgds</v3:ServiceId>
+            <v3:Major>3</v3:Major>
+            <v3:Intermediate>0</v3:Intermediate>
+            <v3:Minor>0</v3:Minor>
+         </v3:Version>
+         <v3:UploadId>INPUT YOUR INFORMATION</v3:UploadId>
+         <v3:HandlingUnitGroupId>Group#1</v3:HandlingUnitGroupId>
+         <v3:TrackingNumbers>INPUT YOUR INFORMATION</v3:TrackingNumbers>
+      </v3:DeleteDangerousGoodsHandlingUnitRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <DeleteDangerousGoodsHandlingUnitReply xmlns="http://fedex.com/ws/dgds/v3">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>dgds</Source>
+            <Code>000</Code>
+            <Message>SUCCESS</Message>
+            <LocalizedMessage>SUCCESS</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>DeleteDangerousGoodsHandlingUnit-Express</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>dgds</ServiceId>
+            <Major>3</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <CompletedShipmentDetail>
+            <Regulation>IATA</Regulation>
+            <RegulationAttributes>DRY_ICE_DECLARATION_REQUIRED</RegulationAttributes>
+            <TotalHandlingUnitCount>2</TotalHandlingUnitCount>
+            <AircraftCategoryType>PASSENGER_AND_CARGO_AIRCRAFT</AircraftCategoryType>
+            <DangerousGoodsDescriptors>DRY_ICE</DangerousGoodsDescriptors>
+            <Options>HAZARDOUS_MATERIALS</Options>
+            <ShipmentDryIceDetail>
+               <PackageCount>2</PackageCount>
+               <TotalWeight>
+                  <Units>KG</Units>
+                  <Value>2.0</Value>
+               </TotalWeight>
+            </ShipmentDryIceDetail>
+         </CompletedShipmentDetail>
+      </DeleteDangerousGoodsHandlingUnitReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+

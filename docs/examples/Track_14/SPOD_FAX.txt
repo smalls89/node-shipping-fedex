@@ -1,0 +1,63 @@
+Request:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v14="http://fedex.com/ws/track/v14">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v14:GetTrackingDocumentsRequest>
+         <v14:WebAuthenticationDetail>
+            <v14:ParentCredential>
+               <v14:Key>A4YlC6CtrGp0oAv7</v14:Key>
+               <v14:Password>GMd9tbHm3tDLUKuYkQQUJAI1a</v14:Password>
+            </v14:ParentCredential>
+            <v14:UserCredential>
+               <v14:Key>MzFgqt08rlRz8WAB</v14:Key>
+               <v14:Password>i9yy72V1TfLQfr8gO6wB3Wgsw</v14:Password>
+            </v14:UserCredential>
+         </v14:WebAuthenticationDetail>
+         <v14:ClientDetail>
+            <v14:AccountNumber>150067600</v14:AccountNumber>
+            <v14:MeterNumber>7003043</v14:MeterNumber>
+         </v14:ClientDetail>
+         <v14:TransactionDetail>
+            <v14:CustomerTransactionId>sig_123</v14:CustomerTransactionId>
+            <v14:Localization>
+               <v14:LanguageCode>EN</v14:LanguageCode>
+               <v14:LocaleCode>US</v14:LocaleCode>
+            </v14:Localization>
+         </v14:TransactionDetail>
+         <v14:Version>
+            <v14:ServiceId>trck</v14:ServiceId>
+            <v14:Major>14</v14:Major>
+            <v14:Intermediate>0</v14:Intermediate>
+            <v14:Minor>0</v14:Minor>
+         </v14:Version>
+         <v14:SelectionDetails>
+            <v14:CarrierCode>FDXE</v14:CarrierCode>
+            <v14:OperatingCompany>FEDEX_EXPRESS</v14:OperatingCompany>
+            <v14:PackageIdentifier>
+               <v14:Type>TRACKING_NUMBER_OR_DOORTAG</v14:Type>
+               <v14:Value>468519236598</v14:Value>
+            </v14:PackageIdentifier>
+            <v14:ShipmentAccountNumber>150067600</v14:ShipmentAccountNumber>
+            <v14:SecureSpodAccount>096400004</v14:SecureSpodAccount>
+            <v14:CustomerSpecifiedTimeOutValueInMilliseconds>200</v14:CustomerSpecifiedTimeOutValueInMilliseconds>
+         </v14:SelectionDetails>
+         <v14:TrackingDocumentSpecification>
+            <v14:DocumentTypes>SIGNATURE_PROOF_OF_DELIVERY</v14:DocumentTypes>
+            <v14:SignatureProofOfDeliveryDetail>
+               <v14:DocumentFormat>
+                  <v14:Dispositions>
+                     <v14:DispositionType>FAX</v14:DispositionType>
+                  </v14:Dispositions>
+                  <v14:Grouping>CONSOLIDATED_BY_DOCUMENT_TYPE</v14:Grouping>
+                  <v14:ImageType>PDF</v14:ImageType>
+               </v14:DocumentFormat>
+            </v14:SignatureProofOfDeliveryDetail>
+         </v14:TrackingDocumentSpecification>
+      </v14:GetTrackingDocumentsRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><SOAP-ENV:Body><GetTrackingDocumentsReply xmlns="http://fedex.com/ws/track/v14"><HighestSeverity>SUCCESS</HighestSeverity><Notifications><Severity>SUCCESS</Severity><Source>trck</Source><Code>0</Code><Message>Request was successfully processed.</Message><LocalizedMessage>Request was successfully processed.</LocalizedMessage></Notifications><TransactionDetail><CustomerTransactionId>sig_123</CustomerTransactionId><Localization><LanguageCode>EN</LanguageCode><LocaleCode>US</LocaleCode></Localization></TransactionDetail><Version><ServiceId>trck</ServiceId><Major>14</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><Documents><Type>SIGNATURE_PROOF_OF_DELIVERY</Type><ImageType>PDF</ImageType><Resolution>0</Resolution><Parts><SequenceNumber>0</SequenceNumber></Parts></Documents></GetTrackingDocumentsReply></SOAP-ENV:Body></SOAP-ENV:Envelope>

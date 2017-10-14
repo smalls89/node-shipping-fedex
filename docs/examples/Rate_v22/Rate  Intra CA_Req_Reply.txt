@@ -1,0 +1,100 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://fedex.com/ws/rate/v22">
+   <SOAP-ENV:Body>
+      <RateRequest>
+         <WebAuthenticationDetail>
+             <ParentCredential>
+               <Key>Input Your Information</Key>
+               <Password>Input Your Information</Password>
+            </ParentCredential>
+            <UserCredential>
+               <Key>Input Your Information</Key>
+               <Password>Input Your Information</Password>
+            </UserCredential>
+         </WebAuthenticationDetail>
+         <ClientDetail>
+            <AccountNumber>Input Your Information</AccountNumber>
+            <MeterNumber>Input Your Information</MeterNumber>
+         </ClientDetail>
+         <TransactionDetail>
+            <CustomerTransactionId>Intra_CA_PRIORITY_OVERNIGHT with YourPackaging</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>crs</ServiceId>
+            <Major>22</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <RequestedShipment>
+            <ShipTimestamp>2016-12-13T12:34:56-06:00</ShipTimestamp>
+            <DropoffType>REGULAR_PICKUP</DropoffType>
+            <ServiceType>PRIORITY_OVERNIGHT</ServiceType>
+            <PackagingType>YOUR_PACKAGING</PackagingType>
+            <TotalWeight>
+               <Units>LB</Units>
+               <Value>50.0</Value>
+            </TotalWeight>
+            <Shipper>
+               <Contact>
+                  <CompanyName>Input Your Information</CompanyName>
+                  <PhoneNumber>Input Your Information</PhoneNumber>
+               </Contact>
+               <Address>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <City>RICHMOND</City>
+                  <StateOrProvinceCode>BC</StateOrProvinceCode>
+                  <PostalCode>V7C4v7</PostalCode>
+                  <CountryCode>CA</CountryCode>
+               </Address>
+            </Shipper>
+            <Recipient>
+               <Contact>
+                  <PersonName>Input Your Information</PersonName>
+                  <PhoneNumber>Input Your Information</PhoneNumber>
+               </Contact>
+               <Address>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <City>Collierville</City>
+                  <StateOrProvinceCode>ON</StateOrProvinceCode>
+                  <PostalCode>N1R7J5</PostalCode>
+                  <CountryCode>CA</CountryCode>
+               </Address>
+            </Recipient>
+            <ShippingChargesPayment>
+               <PaymentType>SENDER</PaymentType>
+               <Payor>
+                  <ResponsibleParty>
+                     <AccountNumber>Input Your Information</AccountNumber>
+                  </ResponsibleParty>
+               </Payor>
+            </ShippingChargesPayment>
+            <RateRequestTypes>LIST</RateRequestTypes>
+            <PackageCount>1</PackageCount>
+            <RequestedPackageLineItems>
+               <SequenceNumber>1</SequenceNumber>
+               <GroupNumber>1</GroupNumber>
+               <GroupPackageCount>1</GroupPackageCount>
+               <Weight>
+                  <Units>LB</Units>
+                  <Value>20.0</Value>
+               </Weight>
+               <Dimensions>
+                  <Length>12</Length>
+                  <Width>12</Width>
+                  <Height>12</Height>
+                  <Units>IN</Units>
+               </Dimensions>
+               <ContentRecords>
+                  <PartNumber>123445</PartNumber>
+                  <ItemNumber>kjdjalsro1262739827</ItemNumber>
+                  <ReceivedQuantity>12</ReceivedQuantity>
+                  <Description>ContentDescription</Description>
+               </ContentRecords>
+            </RequestedPackageLineItems>
+         </RequestedShipment>
+      </RateRequest>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><SOAP-ENV:Body><RateReply xmlns="http://fedex.com/ws/rate/v22"><HighestSeverity>SUCCESS</HighestSeverity><Notifications><Severity>SUCCESS</Severity><Source>crs</Source><Code>0</Code><Message>Request was successfully processed. </Message><LocalizedMessage>Request was successfully processed. </LocalizedMessage></Notifications><TransactionDetail><CustomerTransactionId>Intra_CA_PRIORITY_OVERNIGHT with YourPackaging</CustomerTransactionId></TransactionDetail><Version><ServiceId>crs</ServiceId><Major>20</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><RateReplyDetails><ServiceType>PRIORITY_OVERNIGHT</ServiceType><PackagingType>YOUR_PACKAGING</PackagingType><DestinationAirportId>YYZ</DestinationAirportId><IneligibleForMoneyBackGuarantee>false</IneligibleForMoneyBackGuarantee><OriginServiceArea>A2</OriginServiceArea><DestinationServiceArea>A2</DestinationServiceArea><SignatureOption>SERVICE_DEFAULT</SignatureOption><ActualRateType>PAYOR_ACCOUNT_SHIPMENT</ActualRateType><RatedShipmentDetails><EffectiveNetDiscount><Currency>USD</Currency><Amount>12.09</Amount></EffectiveNetDiscount><ShipmentRateDetail><RateType>PAYOR_ACCOUNT_SHIPMENT</RateType><RateScale>0000000</RateScale><RateZone>R0025</RateZone><PricingCode>ACTUAL</PricingCode><RatedWeightMethod>ACTUAL</RatedWeightMethod><CurrencyExchangeRate><FromCurrency>CAD</FromCurrency><IntoCurrency>USD</IntoCurrency><Rate>0.75</Rate></CurrencyExchangeRate><DimDivisor>139</DimDivisor><DimDivisorType>COUNTRY</DimDivisorType><FuelSurchargePercent>6.0</FuelSurchargePercent><TotalBillingWeight><Units>LB</Units><Value>20.0</Value></TotalBillingWeight><TotalBaseCharge><Currency>USD</Currency><Amount>97.35</Amount></TotalBaseCharge><TotalFreightDiscounts><Currency>USD</Currency><Amount>3.9</Amount></TotalFreightDiscounts><TotalNetFreight><Currency>USD</Currency><Amount>93.45</Amount></TotalNetFreight><TotalSurcharges><Currency>USD</Currency><Amount>5.61</Amount></TotalSurcharges><TotalNetFedExCharge><Currency>USD</Currency><Amount>99.06</Amount></TotalNetFedExCharge><TotalTaxes><Currency>USD</Currency><Amount>12.88</Amount></TotalTaxes><TotalNetCharge><Currency>USD</Currency><Amount>111.94</Amount></TotalNetCharge><TotalRebates><Currency>USD</Currency><Amount>0.0</Amount></TotalRebates><TotalDutiesAndTaxes><Currency>USD</Currency><Amount>0.0</Amount></TotalDutiesAndTaxes><TotalAncillaryFeesAndTaxes><Currency>USD</Currency><Amount>0.0</Amount></TotalAncillaryFeesAndTaxes><TotalDutiesTaxesAndFees><Currency>USD</Currency><Amount>0.0</Amount></TotalDutiesTaxesAndFees><TotalNetChargeWithDutiesAndTaxes><Currency>USD</Currency><Amount>111.94</Amount></TotalNetChargeWithDutiesAndTaxes><FreightDiscounts><RateDiscountType>EARNED</RateDiscountType><Description>Grace</Description><Amount><Currency>USD</Currency><Amount>3.9</Amount></Amount><Percent>4.0</Percent></FreightDiscounts><Surcharges><SurchargeType>FUEL</SurchargeType><Description>Fuel</Description><Amount><Currency>USD</Currency><Amount>5.61</Amount></Amount></Surcharges><Taxes><TaxType>HST</TaxType><Description>Canada Ontario harmonized sales</Description><Amount><Currency>USD</Currency><Amount>12.88</Amount></Amount></Taxes></ShipmentRateDetail></RatedShipmentDetails><RatedShipmentDetails><ShipmentRateDetail><RateType>PAYOR_LIST_SHIPMENT</RateType><RateScale>0000000</RateScale><RateZone>R0025</RateZone><PricingCode>ACTUAL</PricingCode><RatedWeightMethod>ACTUAL</RatedWeightMethod><CurrencyExchangeRate><FromCurrency>CAD</FromCurrency><IntoCurrency>USD</IntoCurrency><Rate>0.75</Rate></CurrencyExchangeRate><DimDivisor>139</DimDivisor><DimDivisorType>COUNTRY</DimDivisorType><FuelSurchargePercent>12.75</FuelSurchargePercent><TotalBillingWeight><Units>LB</Units><Value>20.0</Value></TotalBillingWeight><TotalBaseCharge><Currency>USD</Currency><Amount>97.35</Amount></TotalBaseCharge><TotalFreightDiscounts><Currency>USD</Currency><Amount>0.0</Amount></TotalFreightDiscounts><TotalNetFreight><Currency>USD</Currency><Amount>97.35</Amount></TotalNetFreight><TotalSurcharges><Currency>USD</Currency><Amount>12.41</Amount></TotalSurcharges><TotalNetFedExCharge><Currency>USD</Currency><Amount>109.76</Amount></TotalNetFedExCharge><TotalTaxes><Currency>USD</Currency><Amount>14.27</Amount></TotalTaxes><TotalNetCharge><Currency>USD</Currency><Amount>124.03</Amount></TotalNetCharge><TotalRebates><Currency>USD</Currency><Amount>0.0</Amount></TotalRebates><TotalDutiesAndTaxes><Currency>USD</Currency><Amount>0.0</Amount></TotalDutiesAndTaxes><TotalAncillaryFeesAndTaxes><Currency>USD</Currency><Amount>0.0</Amount></TotalAncillaryFeesAndTaxes><TotalDutiesTaxesAndFees><Currency>USD</Currency><Amount>0.0</Amount></TotalDutiesTaxesAndFees><TotalNetChargeWithDutiesAndTaxes><Currency>USD</Currency><Amount>124.03</Amount></TotalNetChargeWithDutiesAndTaxes><Surcharges><SurchargeType>FUEL</SurchargeType><Description>Fuel</Description><Amount><Currency>USD</Currency><Amount>12.41</Amount></Amount></Surcharges><Taxes><TaxType>HST</TaxType><Description>Canada Ontario harmonized sales</Description><Amount><Currency>USD</Currency><Amount>14.27</Amount></Amount></Taxes></ShipmentRateDetail></RatedShipmentDetails></RateReplyDetails></RateReply></SOAP-ENV:Body></SOAP-ENV:Envelope>

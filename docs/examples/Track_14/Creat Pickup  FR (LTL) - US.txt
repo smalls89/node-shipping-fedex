@@ -1,0 +1,211 @@
+Request:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v15="http://fedex.com/ws/pickup/v15">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v15:CreatePickupRequest>
+         <v15:WebAuthenticationDetail>
+            <v15:ParentCredential>
+               <v15:Key>Input Your Information</v15:Key>
+               <v15:Password>Input Your Information</v15:Password>
+            </v15:ParentCredential>
+            <v15:UserCredential>
+               <v15:Key>Input Your Information</v15:Key>
+               <v15:Password>Input Your Information</v15:Password>
+            </v15:UserCredential>
+         </v15:WebAuthenticationDetail>
+         <v15:ClientDetail>
+            <v15:AccountNumber>Input Your Information</v15:AccountNumber>
+            <v15:MeterNumber>Input Your Information</v15:MeterNumber>
+            <v15:IntegratorId>Input Your Information</v15:IntegratorId>
+            <v15:Localization>
+               <v15:LanguageCode>EN</v15:LanguageCode>
+               <v15:LocaleCode>ES</v15:LocaleCode>
+            </v15:Localization>
+         </v15:ClientDetail>
+         <v15:TransactionDetail>
+            <v15:CustomerTransactionId>Create Freight LTL Pickup</v15:CustomerTransactionId>
+            <v15:Localization>
+               <v15:LanguageCode>EN</v15:LanguageCode>
+               <v15:LocaleCode>ES</v15:LocaleCode>
+            </v15:Localization>
+         </v15:TransactionDetail>
+         <v15:Version>
+            <v15:ServiceId>disp</v15:ServiceId>
+            <v15:Major>15</v15:Major>
+            <v15:Intermediate>0</v15:Intermediate>
+            <v15:Minor>0</v15:Minor>
+         </v15:Version>
+         <v15:AssociatedAccountNumber>
+            <v15:Type>FEDEX_FREIGHT</v15:Type>
+            <v15:AccountNumber>Input Your Information</v15:AccountNumber>
+         </v15:AssociatedAccountNumber>
+         <v15:OriginDetail>
+            <v15:UseAccountAddress>0</v15:UseAccountAddress>
+            <v15:PickupLocation>
+               <v15:Contact>
+                  <v15:ContactId>Input Your Information</v15:ContactId>
+                  <v15:PersonName>Input Your Information</v15:PersonName>
+                  <v15:Title>Mr.</v15:Title>
+                  <v15:CompanyName>Input Your Information</v15:CompanyName>
+                  <v15:PhoneNumber>Input Your Information</v15:PhoneNumber>
+                  <v15:PhoneExtension>Input Your Information</v15:PhoneExtension>
+                  <v15:PagerNumber>Input Your Information</v15:PagerNumber>
+                  <v15:FaxNumber>Input Your Information</v15:FaxNumber>
+                  <v15:EMailAddress>Input Your Information</v15:EMailAddress>
+               </v15:Contact>
+               <v15:Address>
+                  <v15:StreetLines>Input Your Information</v15:StreetLines>
+                  <v15:City>Input Your Information</v15:City>
+                  <v15:StateOrProvinceCode>Input Your Information</v15:StateOrProvinceCode>
+                  <v15:PostalCode>Input Your Information</v15:PostalCode>
+                  <v15:CountryCode>Input Your Information</v15:CountryCode>
+               </v15:Address>
+            </v15:PickupLocation>
+            <v15:PackageLocation>FRONT</v15:PackageLocation>
+            <v15:BuildingPart>DEPARTMENT</v15:BuildingPart>
+            <v15:BuildingPartDescription>BuildingPartDescription</v15:BuildingPartDescription>
+            <v15:ReadyTimestamp>Input Your Information</v15:ReadyTimestamp>
+            <v15:CompanyCloseTime>Input Your Information</v15:CompanyCloseTime>
+            <v15:Location>COS</v15:Location>
+            <v15:SuppliesRequested>SuppliesRequested</v15:SuppliesRequested>
+         </v15:OriginDetail>
+         <v15:FreightPickupDetail>
+            <v15:ApprovedBy>
+               <v15:PersonName>Input Your Information</v15:PersonName>
+               <v15:CompanyName>Input Your Information</v15:CompanyName>
+               <v15:PhoneNumber>Input Your Information</v15:PhoneNumber>
+            </v15:ApprovedBy>
+            <v15:Payment>SENDER</v15:Payment>
+            <v15:Role>SHIPPER</v15:Role>
+            <v15:SubmittedBy>
+               <v15:PersonName>Input Your Information</v15:PersonName>
+               <v15:CompanyName>Input Your Information</v15:CompanyName>
+               <v15:PhoneNumber>Input Your Information</v15:PhoneNumber>
+            </v15:SubmittedBy>
+            <v15:LineItems>
+               <v15:Service>FEDEX_FREIGHT_ECONOMY</v15:Service>
+               <v15:SequenceNumber>1</v15:SequenceNumber>
+               <v15:Destination>
+                  <v15:StreetLines>Input Your Information</v15:StreetLines>
+                  <v15:City>Input Your Information</v15:City>
+                  <v15:StateOrProvinceCode>Input Your Information</v15:StateOrProvinceCode>
+                  <v15:PostalCode>Input Your Information</v15:PostalCode>
+                  <v15:CountryCode>Input Your Information</v15:CountryCode>
+               </v15:Destination>
+               <v15:Packaging>BUNDLE</v15:Packaging>
+               <v15:Pieces>4</v15:Pieces>
+               <v15:Weight>
+                  <v15:Units>LB</v15:Units>
+                  <v15:Value>145.0</v15:Value>
+               </v15:Weight>
+               <v15:TotalHandlingUnits>2</v15:TotalHandlingUnits>
+               <v15:JustOneMore>1</v15:JustOneMore>
+               <v15:Description>String</v15:Description>
+            </v15:LineItems>
+         </v15:FreightPickupDetail>
+         <v15:PackageCount>4</v15:PackageCount>
+         <v15:TotalWeight>
+            <v15:Units>LB</v15:Units>
+            <v15:Value>145.0</v15:Value>
+         </v15:TotalWeight>
+         <v15:CarrierCode>FXFR</v15:CarrierCode>
+         <v15:OversizePackageCount>1</v15:OversizePackageCount>
+         <v15:Remarks>**This is a TEST** Do not send a driver!!</v15:Remarks>
+         <v15:CommodityDescription>**This is a TEST** Do not send a driver!!</v15:CommodityDescription>
+      </v15:CreatePickupRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Reply:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <CreatePickupReply xmlns="http://fedex.com/ws/pickup/v15">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>disp</Source>
+            <Code>0000</Code>
+            <Message>Success</Message>
+            <LocalizedMessage>Success</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>Create Freight LTL Pickup</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>ES</LocaleCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>disp</ServiceId>
+            <Major>15</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <PickupConfirmationNumber>20161219PIT000010</PickupConfirmationNumber>
+         <CompletedFreightPickupDetail>
+            <Origin>
+               <AdditionalDays>0</AdditionalDays>
+               <LocalDistance>
+                  <Value>18.0</Value>
+                  <Units>MI</Units>
+               </LocalDistance>
+               <LocalDuration>PT58M</LocalDuration>
+               <Location>PIT</Location>
+               <ContactAndAddress>
+                  <Contact>
+                     <PersonName>ANDY YOST</PersonName>
+                     <CompanyName>PITTSBURGH</CompanyName>
+                     <PhoneNumber>8004046297</PhoneNumber>
+                     <FaxNumber>7244491144</FaxNumber>
+                  </Contact>
+                  <Address>
+                     <StreetLines>2081C KRAMER RD</StreetLines>
+                     <City>GIBSONIA</City>
+                     <StateOrProvinceCode>PA</StateOrProvinceCode>
+                     <PostalCode>15044-9631</PostalCode>
+                     <CountryCode>US</CountryCode>
+                     <Residential>false</Residential>
+                  </Address>
+               </ContactAndAddress>
+            </Origin>
+            <LineItems>
+               <SequenceNumber>1</SequenceNumber>
+               <Destination>
+                  <InterlineCarrierCode>FEDEX_FREIGHT_ECONOMY</InterlineCarrierCode>
+                  <InterlineCarrierName>FedEx Freight</InterlineCarrierName>
+                  <AdditionalDays>0</AdditionalDays>
+                  <LocalService>FEDEX_FREIGHT_ECONOMY</LocalService>
+                  <LocalDistance>
+                     <Value>18.0</Value>
+                     <Units>MI</Units>
+                  </LocalDistance>
+                  <LocalDuration>PT58M</LocalDuration>
+                  <LocalServiceScheduling>STANDARD</LocalServiceScheduling>
+                  <Location>PIT</Location>
+                  <ContactAndAddress>
+                     <Address>
+                        <StreetLines>Input Your Information</StreetLines>
+                        <City>PITTSBURGH</City>
+                        <StateOrProvinceCode>PA</StateOrProvinceCode>
+                        <PostalCode>15220</PostalCode>
+                        <CountryCode>US</CountryCode>
+                        <Residential>false</Residential>
+                     </Address>
+                  </ContactAndAddress>
+               </Destination>
+               <TotalTravelTime>P2D</TotalTravelTime>
+               <EtaDeliveryTimestamp>2016-12-21T00:00:00</EtaDeliveryTimestamp>
+            </LineItems>
+            <TotalPieces>4</TotalPieces>
+            <TotalWeight>
+               <Units>LB</Units>
+               <Value>145.0</Value>
+            </TotalWeight>
+            <TotalHandlingUnits>2</TotalHandlingUnits>
+         </CompletedFreightPickupDetail>
+      </CreatePickupReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,136 @@
+Request:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v6="http://fedex.com/ws/cnty/v6">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v6:GetAvailablePostalsRequest>
+         <v6:WebAuthenticationDetail>
+            <v6:ParentCredential>
+               <v6:Key>INPUT YOUR INFORMATION</v6:Key>
+               <v6:Password>INPUT YOUR INFORMATION</v6:Password>
+            </v6:ParentCredential>
+            <v6:UserCredential>
+               <v6:Key>INPUT YOUR INFORMATION</v6:Key>
+               <v6:Password>INPUT YOUR INFORMATION</v6:Password>
+            </v6:UserCredential>
+         </v6:WebAuthenticationDetail>
+         <v6:ClientDetail>
+            <v6:AccountNumber>INPUT YOUR INFORMATION</v6:AccountNumber>
+            <v6:GroundShipperNumber>INPUT YOUR INFORMATION</v6:GroundShipperNumber>
+            <v6:MeterNumber>INPUT YOUR INFORMATION</v6:MeterNumber>
+            <v6:MasterMeterNumber>INPUT YOUR INFORMATION</v6:MasterMeterNumber>
+            <v6:MeterInstance>1121</v6:MeterInstance>
+            <v6:CompanyId>1432</v6:CompanyId>
+            <v6:SoftwareId>ESBD</v6:SoftwareId>
+            <v6:SoftwareRelease>3150</v6:SoftwareRelease>
+            <v6:ClientProductId>ESBD</v6:ClientProductId>
+            <v6:ClientProductVersion>3150</v6:ClientProductVersion>
+            <v6:MiddlewareProductId>12345</v6:MiddlewareProductId>
+            <v6:MiddlewareProductVersion>1620</v6:MiddlewareProductVersion>
+            <v6:IntegratorId>86655</v6:IntegratorId>
+            <v6:Region>LAC</v6:Region>
+            <v6:AutoConfigurationType>TRADITIONAL</v6:AutoConfigurationType>
+            <v6:Localization>
+               <v6:LanguageCode>EN</v6:LanguageCode>
+               <v6:LocaleCode>en</v6:LocaleCode>
+            </v6:Localization>
+         </v6:ClientDetail>
+         <v6:UserDetail>
+            <v6:UserId>12234</v6:UserId>
+            <v6:Password>abc34</v6:Password>
+            <v6:UniqueUserId>3453</v6:UniqueUserId>
+         </v6:UserDetail>
+         <v6:TransactionDetail>
+            <v6:CustomerTransactionId>123312</v6:CustomerTransactionId>
+            <v6:Localization>
+               <v6:LanguageCode>EN</v6:LanguageCode>
+               <v6:LocaleCode>en</v6:LocaleCode>
+            </v6:Localization>
+            <v6:InternalTransactionId>12dsd</v6:InternalTransactionId>
+            <v6:Tracing>false</v6:Tracing>
+            <v6:SourceFormat>API_XML</v6:SourceFormat>
+            <v6:Environment>TEST</v6:Environment>
+         </v6:TransactionDetail>
+         <v6:Version>
+            <v6:ServiceId>cnty</v6:ServiceId>
+            <v6:Major>6</v6:Major>
+            <v6:Intermediate>0</v6:Intermediate>
+            <v6:Minor>0</v6:Minor>
+         </v6:Version>
+         <v6:ShipDateTime>2016-12-12T16:16:44-06:00</v6:ShipDateTime>
+         <v6:CarrierCodes>FDXE</v6:CarrierCodes>
+         <v6:MatchAndResultCriteria>
+            <v6:MatchAddress>
+               <v6:PostalCode>50200</v6:PostalCode>
+               <v6:CountryCode>MX</v6:CountryCode>
+               <v6:Residential>1</v6:Residential>
+               <v6:GeographicCoordinates>cum murmure</v6:GeographicCoordinates>
+            </v6:MatchAddress>
+            <v6:MatchStoreNumber>15</v6:MatchStoreNumber>
+            <v6:MatchLocationTypes>FEDEX_OFFICE</v6:MatchLocationTypes>
+            <v6:MatchLocationId>10</v6:MatchLocationId>
+            <v6:MatchConditions>MATCH_BY_EXACT_POSTAL_CODE</v6:MatchConditions>
+            <v6:ResultsToSkip>0</v6:ResultsToSkip>
+            <v6:ResultsRequested>15</v6:ResultsRequested>
+            <v6:ResultConditions>INCLUDE_POSTAL_CODES</v6:ResultConditions>
+         </v6:MatchAndResultCriteria>
+      </v6:GetAvailablePostalsRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ValidatePostalReply xmlns="http://fedex.com/ws/cnty/v6">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>cnty</Source>
+            <Code>000</Code>
+            <Message>SUCCESS</Message>
+            <LocalizedMessage>SUCCESS</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>ValidatePostalRequest_Basic</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>US</LocaleCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>cnty</ServiceId>
+            <Major>6</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <PostalDetail>
+            <CountryCode>US</CountryCode>
+            <StateOrProvinceCode>TN</StateOrProvinceCode>
+            <CityFirstInitials>CFP</CityFirstInitials>
+            <CleanedPostalCode>38017</CleanedPostalCode>
+            <LocationDescriptions>
+               <LocationId>HKAA</LocationId>
+               <LocationNumber>782</LocationNumber>
+               <CountryCode>US</CountryCode>
+               <StateOrProvinceCode>TN</StateOrProvinceCode>
+               <PostalCode>38017</PostalCode>
+               <ServiceArea>A2</ServiceArea>
+               <AirportId>MEM</AirportId>
+               <FedExEuropeFirstOrigin>false</FedExEuropeFirstOrigin>
+            </LocationDescriptions>
+            <LocationDescriptions>
+               <LocationId>OLVRT</LocationId>
+               <LocationNumber>891</LocationNumber>
+               <CountryCode>US</CountryCode>
+               <StateOrProvinceCode>TN</StateOrProvinceCode>
+               <PostalCode>38017</PostalCode>
+               <ServiceArea>H1</ServiceArea>
+               <AirportId>OLV</AirportId>
+               <FedExEuropeFirstOrigin>false</FedExEuropeFirstOrigin>
+            </LocationDescriptions>
+         </PostalDetail>
+      </ValidatePostalReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

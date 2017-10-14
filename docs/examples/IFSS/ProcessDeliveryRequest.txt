@@ -1,0 +1,77 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://fedex.com/ws/ifss/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ProcessDeliveryRequest>
+         <WebAuthenticationDetail>
+            <ParentCredential>
+               <Key>Input your Information</Key>
+               <Password>Input your Information</Password>
+            </ParentCredential>
+            <UserCredential>
+               <Key>Input your Information</Key>
+               <Password>Input your Information</Password>
+            </UserCredential>
+         </WebAuthenticationDetail>
+         <ClientDetail>
+            <AccountNumber>Input your Information</AccountNumber>
+            <MeterNumber>Input your Information</MeterNumber>
+         </ClientDetail>
+         <TransactionDetail>
+            <CustomerTransactionId>ProcessDelivery_25th</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>ifss</ServiceId>
+            <Major>1</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <ActionRequested>ADD</ActionRequested>
+         <UniqueTrackingNumber>
+            <TrackingNumber>Input your Information</TrackingNumber>
+            <TrackingNumberUniqueIdentifier>Input your Information</TrackingNumberUniqueIdentifier>
+           <ShipDate>2015-11-18</ShipDate>
+         </UniqueTrackingNumber>
+         <RecipientContact>
+            <PersonName>Input your Information</PersonName>
+            <CompanyName>Input your Information</CompanyName>
+            <PhoneNumber>Input your Information</PhoneNumber>
+            <EMailAddress>Input your Information</EMailAddress>
+         </RecipientContact>
+         <DestinationAddress>
+            <StreetLines>Input your Information</StreetLines>
+            <City>Input your Information</City>
+            <StateOrProvinceCode>Input your Information</StateOrProvinceCode>
+            <PostalCode>Input your Information</PostalCode>
+            <CountryCode>Input your Information</CountryCode>
+         </DestinationAddress>
+         <DeliveryRequestDetail>
+            <Type>REDIRECT_TO_HOLD_AT_LOCATION</Type>
+            <RedirectToHoldAtLocationDetail>
+               <HoldingLocationId>ARGK</HoldingLocationId>
+               <HoldingLocationNumber>0</HoldingLocationNumber>
+               <HoldingLocationContactAndAddress>
+                  <Contact>
+                     <ContactId>Input your Information</ContactId>
+                   
+                     <CompanyName>Input your Information</CompanyName>
+                     <PhoneNumber>Input your Information</PhoneNumber>
+                     <PhoneExtension>Input your Information</PhoneExtension>
+                     <PagerNumber>Input your Information</PagerNumber>
+                     <FaxNumber>Input your Information</FaxNumber>
+                     <EMailAddress>Input your Information</EMailAddress>
+                  </Contact>
+                  <Address>
+                     <StreetLines>Input your Information</StreetLines>
+                     <City>Input your Information</City>
+                     <StateOrProvinceCode>Input your Information</StateOrProvinceCode>
+                     <PostalCode>Input your Information</PostalCode>
+                     <CountryCode>Input your Information</CountryCode>
+                     <Residential>Input your Information</Residential>
+                  </Address>
+               </HoldingLocationContactAndAddress>
+               <Comments>Please Redirect to New Address</Comments>
+            </RedirectToHoldAtLocationDetail>
+         </DeliveryRequestDetail>
+      </ProcessDeliveryRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

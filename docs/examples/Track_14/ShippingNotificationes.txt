@@ -1,0 +1,114 @@
+Request:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v14="http://fedex.com/ws/track/v14">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v14:SendNotificationsRequest>
+         <v14:WebAuthenticationDetail>
+            <v14:ParentCredential>
+               <v14:Key>A4YlC6CtrGp0oAv7</v14:Key>
+               <v14:Password>GMd9tbHm3tDLUKuYkQQUJAI1a</v14:Password>
+            </v14:ParentCredential>
+            <v14:UserCredential>
+               <v14:Key>MzFgqt08rlRz8WAB</v14:Key>
+               <v14:Password>i9yy72V1TfLQfr8gO6wB3Wgsw</v14:Password>
+            </v14:UserCredential>
+         </v14:WebAuthenticationDetail>
+         <v14:ClientDetail>
+            <v14:AccountNumber>150067600</v14:AccountNumber>
+            <v14:MeterNumber>7003043</v14:MeterNumber>
+            <v14:Localization>
+               <v14:LanguageCode>EN</v14:LanguageCode>
+            </v14:Localization>
+         </v14:ClientDetail>
+         <v14:TransactionDetail>
+            <v14:CustomerTransactionId>SendNotificationsRequest_v9</v14:CustomerTransactionId>
+            <v14:Localization>
+               <v14:LanguageCode>EN</v14:LanguageCode>
+            </v14:Localization>
+         </v14:TransactionDetail>
+         <v14:Version>
+            <v14:ServiceId>trck</v14:ServiceId>
+            <v14:Major>14</v14:Major>
+            <v14:Intermediate>0</v14:Intermediate>
+            <v14:Minor>0</v14:Minor>
+         </v14:Version>
+         <v14:TrackingNumber>794887075005</v14:TrackingNumber>
+         <v14:TrackingNumberUniqueId>2457710000~794887075005~FX</v14:TrackingNumberUniqueId>
+         <v14:ShipDateRangeBegin>2016-11-17</v14:ShipDateRangeBegin>
+         <v14:ShipDateRangeEnd>2016-11-17</v14:ShipDateRangeEnd>
+         <v14:SenderEMailAddress>FURQAN_SHAIKH@SYNTELINC.COM</v14:SenderEMailAddress>
+         <v14:SenderContactName>FURQAN</v14:SenderContactName>
+         <v14:EventNotificationDetail>
+            <v14:AggregationType>PER_PACKAGE</v14:AggregationType>
+            <v14:PersonalMessage>Message</v14:PersonalMessage>
+            <v14:EventNotifications>
+               <v14:Role>SHIPPER</v14:Role>
+               <v14:Events>ON_DELIVERY</v14:Events>
+               <v14:NotificationDetail>
+                  <v14:NotificationType>EMAIL</v14:NotificationType>
+                  <v14:EmailDetail>
+                     <v14:EmailAddress>SHAIKH_FURQAN@SYNTELINC.COM</v14:EmailAddress>
+                     <v14:Name>nimborum in</v14:Name>
+                  </v14:EmailDetail>
+                  <v14:Localization>
+                     <v14:LanguageCode>LANGUAGE_CODE</v14:LanguageCode>
+                     <v14:LocaleCode>LOCAL_CODE</v14:LocaleCode>
+                  </v14:Localization>
+               </v14:NotificationDetail>
+               <v14:FormatSpecification>
+                  <v14:Type>TEXT</v14:Type>
+               </v14:FormatSpecification>
+            </v14:EventNotifications>
+         </v14:EventNotificationDetail>
+      </v14:SendNotificationsRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <SendNotificationsReply xmlns="http://fedex.com/ws/track/v14">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>trck</Source>
+            <Code>0</Code>
+            <Message>Request was successfully processed.</Message>
+            <LocalizedMessage>Request was successfully processed.</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>SendNotificationsRequest_v9</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>trck</ServiceId>
+            <Major>14</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <DuplicateWaybill>false</DuplicateWaybill>
+         <MoreDataAvailable>false</MoreDataAvailable>
+         <Packages>
+            <TrackingNumber>794887075005</TrackingNumber>
+            <TrackingNumberUniqueIdentifiers>2457710000~794887075005~FX</TrackingNumberUniqueIdentifiers>
+            <CarrierCode>FDXE</CarrierCode>
+            <Destination>
+               <City>DENVER</City>
+               <StateOrProvinceCode>CO</StateOrProvinceCode>
+               <CountryCode>US</CountryCode>
+               <CountryName>United States</CountryName>
+               <Residential>false</Residential>
+            </Destination>
+            <RecipientDetails>
+               <NotificationEventsAvailable>ON_DELIVERY</NotificationEventsAvailable>
+            </RecipientDetails>
+         </Packages>
+      </SendNotificationsReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

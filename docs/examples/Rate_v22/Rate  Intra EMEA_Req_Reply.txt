@@ -1,0 +1,138 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://fedex.com/ws/rate/v22">
+   <SOAP-ENV:Body>
+      <RateRequest>
+          <WebAuthenticationDetail>            
+             <ParentCredential>
+               <Key>Input Your Information</Key>
+               <Password>Input Your Information</Password>
+            </ParentCredential>
+            <UserCredential>
+               <Key>Input Your Information</Key>
+               <Password>Input Your Information</Password>
+            </UserCredential>
+         </WebAuthenticationDetail>
+         <ClientDetail>
+            <AccountNumber>Input Your Information</AccountNumber>
+            <MeterNumber>Input Your Information</MeterNumber>
+         </ClientDetail>
+         <TransactionDetail>
+            <CustomerTransactionId>TC307_EMEA with Payment type_SENDER</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>crs</ServiceId>
+            <Major>22</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <RequestedShipment>
+            <ShipTimestamp>2016-12-13T12:34:56-06:00</ShipTimestamp>
+            <DropoffType>REGULAR_PICKUP</DropoffType>
+            <ServiceType>FEDEX_NEXT_DAY_MID_MORNING</ServiceType>
+            <PackagingType>YOUR_PACKAGING</PackagingType>
+            <PreferredCurrency>USD</PreferredCurrency>
+            <Shipper>
+               <Contact>
+                  <PersonName>Input Your Information</PersonName>
+                  <CompanyName>Input Your Information</CompanyName>
+                  <PhoneNumber>Input Your Information</PhoneNumber>
+                  <EMailAddress>sender@yahoo.com</EMailAddress>
+               </Contact>
+               <Address>
+                  <StreetLines>StreetLines_101</StreetLines>
+                  <City>HATFIELD</City>
+                  <StateOrProvinceCode>HE</StateOrProvinceCode>
+                  <PostalCode>AL10</PostalCode>
+                  <CountryCode>GB</CountryCode>
+               </Address>
+            </Shipper>
+            <Recipient>
+               <Contact>
+                  <PersonName>Input Your Information</PersonName>
+                  <CompanyName>Input Your Information</CompanyName>
+                  <PhoneNumber>Input Your Information</PhoneNumber>
+                  <EMailAddress>recipient@yahoo.com</EMailAddress>
+               </Contact>
+               <Address>
+                  <StreetLines>StreetLines_420</StreetLines>
+                  <City>WELLBANK</City>
+                  <StateOrProvinceCode>TA</StateOrProvinceCode>
+                  <PostalCode>DD5</PostalCode>
+                  <CountryCode>GB</CountryCode>
+               </Address>
+            </Recipient>
+            <ShippingChargesPayment>
+               <PaymentType>SENDER</PaymentType>
+               <Payor>
+                  <ResponsibleParty>
+                     <AccountNumber>Input Your Information</AccountNumber>
+                  </ResponsibleParty>
+               </Payor>
+            </ShippingChargesPayment>
+            <CustomsClearanceDetail>
+               <DutiesPayment>
+                  <PaymentType>SENDER</PaymentType>
+                  <Payor>
+                     <ResponsibleParty>
+                        <AccountNumber>Input Your Information</AccountNumber>
+                     </ResponsibleParty>
+                  </Payor>
+               </DutiesPayment>
+               <DocumentContent>DOCUMENTS_ONLY</DocumentContent>
+               <CustomsValue>
+                  <Currency>USD</Currency>
+                  <Amount>100.00</Amount>
+               </CustomsValue>
+               <CommercialInvoice>
+                  <TermsOfSale>FOB_OR_FCA</TermsOfSale>
+               </CommercialInvoice>
+               <Commodities>
+                  <NumberOfPieces>1</NumberOfPieces>
+                  <Description>ABCD</Description>
+                  <CountryOfManufacture>HU</CountryOfManufacture>
+                  <Weight>
+                     <Units>LB</Units>
+                     <Value>1.0</Value>
+                  </Weight>
+                  <Quantity>1</Quantity>
+                  <QuantityUnits>cm</QuantityUnits>
+                  <UnitPrice>
+                     <Currency>USD</Currency>
+                     <Amount>1.000000</Amount>
+                  </UnitPrice>
+                  <CustomsValue>
+                     <Currency>USD</Currency>
+                     <Amount>100.000000</Amount>
+                  </CustomsValue>
+               </Commodities>
+               <ExportDetail>
+                  <ExportComplianceStatement>30.37(f)</ExportComplianceStatement>
+               </ExportDetail>
+            </CustomsClearanceDetail>
+            <RateRequestTypes>LIST</RateRequestTypes>
+            <PackageCount>1</PackageCount>
+            <RequestedPackageLineItems>
+               <SequenceNumber>1</SequenceNumber>
+               <GroupNumber>1</GroupNumber>
+               <GroupPackageCount>1</GroupPackageCount>
+               <Weight>
+                  <Units>LB</Units>
+                  <Value>20.0</Value>
+               </Weight>
+               <Dimensions>
+                  <Length>12</Length>
+                  <Width>12</Width>
+                  <Height>12</Height>
+                  <Units>IN</Units>
+               </Dimensions>
+               <CustomerReferences>
+                  <CustomerReferenceType>CUSTOMER_REFERENCE</CustomerReferenceType>
+                  <Value>TC001_01_PT1_ST01_PK01_SNDUS_RCPCA_POS</Value>
+               </CustomerReferences>
+            </RequestedPackageLineItems>
+         </RequestedShipment>
+      </RateRequest>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><SOAP-ENV:Body><RateReply xmlns="http://fedex.com/ws/rate/v22"><HighestSeverity>SUCCESS</HighestSeverity><Notifications><Severity>SUCCESS</Severity><Source>crs</Source><Code>0</Code><Message>Request was successfully processed. </Message><LocalizedMessage>Request was successfully processed. </LocalizedMessage></Notifications><TransactionDetail><CustomerTransactionId>TC307_EMEA with Payment type_SENDER</CustomerTransactionId></TransactionDetail><Version><ServiceId>crs</ServiceId><Major>20</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><RateReplyDetails><ServiceType>FEDEX_NEXT_DAY_MID_MORNING</ServiceType><PackagingType>YOUR_PACKAGING</PackagingType><DestinationAirportId>STN</DestinationAirportId><IneligibleForMoneyBackGuarantee>false</IneligibleForMoneyBackGuarantee><OriginServiceArea>A1</OriginServiceArea><DestinationServiceArea>A2</DestinationServiceArea><SignatureOption>SERVICE_DEFAULT</SignatureOption><ActualRateType>PAYOR_ACCOUNT_SHIPMENT</ActualRateType><RatedShipmentDetails><ShipmentRateDetail><RateType>PAYOR_ACCOUNT_SHIPMENT</RateType><RateScale>0000000</RateScale><RateZone>R0001</RateZone><PricingCode>BASE</PricingCode><RatedWeightMethod>ACTUAL</RatedWeightMethod><CurrencyExchangeRate><FromCurrency>UKL</FromCurrency><IntoCurrency>UKL</IntoCurrency><Rate>1.0</Rate></CurrencyExchangeRate><DimDivisor>139</DimDivisor><DimDivisorType>COUNTRY</DimDivisorType><FuelSurchargePercent>5.5</FuelSurchargePercent><TotalBillingWeight><Units>LB</Units><Value>20.0</Value></TotalBillingWeight><TotalBaseCharge><Currency>UKL</Currency><Amount>33.51</Amount></TotalBaseCharge><TotalFreightDiscounts><Currency>UKL</Currency><Amount>0.0</Amount></TotalFreightDiscounts><TotalNetFreight><Currency>UKL</Currency><Amount>33.51</Amount></TotalNetFreight><TotalSurcharges><Currency>UKL</Currency><Amount>1.84</Amount></TotalSurcharges><TotalNetFedExCharge><Currency>UKL</Currency><Amount>35.35</Amount></TotalNetFedExCharge><TotalTaxes><Currency>UKL</Currency><Amount>7.07</Amount></TotalTaxes><TotalNetCharge><Currency>UKL</Currency><Amount>42.42</Amount></TotalNetCharge><TotalRebates><Currency>UKL</Currency><Amount>0.0</Amount></TotalRebates><TotalDutiesAndTaxes><Currency>UKL</Currency><Amount>0.0</Amount></TotalDutiesAndTaxes><TotalAncillaryFeesAndTaxes><Currency>UKL</Currency><Amount>0.0</Amount></TotalAncillaryFeesAndTaxes><TotalDutiesTaxesAndFees><Currency>UKL</Currency><Amount>0.0</Amount></TotalDutiesTaxesAndFees><TotalNetChargeWithDutiesAndTaxes><Currency>UKL</Currency><Amount>42.42</Amount></TotalNetChargeWithDutiesAndTaxes><Surcharges><SurchargeType>FUEL</SurchargeType><Description>Fuel</Description><Amount><Currency>UKL</Currency><Amount>1.84</Amount></Amount></Surcharges><Taxes><TaxType>VAT</TaxType><Description>United Kingdom VAT</Description><Amount><Currency>UKL</Currency><Amount>7.07</Amount></Amount></Taxes></ShipmentRateDetail></RatedShipmentDetails><RatedShipmentDetails><ShipmentRateDetail><RateType>PAYOR_LIST_SHIPMENT</RateType><RateScale>0000000</RateScale><RateZone>R0001</RateZone><PricingCode>BASE</PricingCode><RatedWeightMethod>ACTUAL</RatedWeightMethod><CurrencyExchangeRate><FromCurrency>UKL</FromCurrency><IntoCurrency>UKL</IntoCurrency><Rate>1.0</Rate></CurrencyExchangeRate><DimDivisor>139</DimDivisor><DimDivisorType>COUNTRY</DimDivisorType><FuelSurchargePercent>5.5</FuelSurchargePercent><TotalBillingWeight><Units>LB</Units><Value>20.0</Value></TotalBillingWeight><TotalBaseCharge><Currency>UKL</Currency><Amount>33.51</Amount></TotalBaseCharge><TotalFreightDiscounts><Currency>UKL</Currency><Amount>0.0</Amount></TotalFreightDiscounts><TotalNetFreight><Currency>UKL</Currency><Amount>33.51</Amount></TotalNetFreight><TotalSurcharges><Currency>UKL</Currency><Amount>1.84</Amount></TotalSurcharges><TotalNetFedExCharge><Currency>UKL</Currency><Amount>35.35</Amount></TotalNetFedExCharge><TotalTaxes><Currency>UKL</Currency><Amount>0.0</Amount></TotalTaxes><TotalNetCharge><Currency>UKL</Currency><Amount>35.35</Amount></TotalNetCharge><TotalRebates><Currency>UKL</Currency><Amount>0.0</Amount></TotalRebates><TotalDutiesAndTaxes><Currency>UKL</Currency><Amount>0.0</Amount></TotalDutiesAndTaxes><TotalAncillaryFeesAndTaxes><Currency>UKL</Currency><Amount>0.0</Amount></TotalAncillaryFeesAndTaxes><TotalDutiesTaxesAndFees><Currency>UKL</Currency><Amount>0.0</Amount></TotalDutiesTaxesAndFees><TotalNetChargeWithDutiesAndTaxes><Currency>UKL</Currency><Amount>35.35</Amount></TotalNetChargeWithDutiesAndTaxes><Surcharges><SurchargeType>FUEL</SurchargeType><Description>Fuel</Description><Amount><Currency>UKL</Currency><Amount>1.84</Amount></Amount></Surcharges></ShipmentRateDetail></RatedShipmentDetails></RateReplyDetails></RateReply></SOAP-ENV:Body></SOAP-ENV:Envelope>

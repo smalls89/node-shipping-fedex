@@ -1,0 +1,135 @@
+Request:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v14="http://fedex.com/ws/track/v14">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v14:TrackRequest>
+          <v14:WebAuthenticationDetail>
+            <v14:ParentCredential>
+               <v14:Key>A4YlC6CtrGp0oAv7</v14:Key>
+               <v14:Password>GMd9tbHm3tDLUKuYkQQUJAI1a</v14:Password>
+            </v14:ParentCredential>
+            <v14:UserCredential>
+               <v14:Key>MzFgqt08rlRz8WAB</v14:Key>
+               <v14:Password>i9yy72V1TfLQfr8gO6wB3Wgsw</v14:Password>
+            </v14:UserCredential>
+         </v14:WebAuthenticationDetail>
+         <v14:ClientDetail>
+            <v14:AccountNumber>150067600</v14:AccountNumber>
+            <v14:MeterNumber>7003043</v14:MeterNumber>
+            <v14:IntegratorId/>
+            <v14:Localization>
+               <v14:LanguageCode>EN</v14:LanguageCode>
+               <v14:LocaleCode>US</v14:LocaleCode>
+            </v14:Localization>
+         </v14:ClientDetail>
+         <v14:TransactionDetail>
+            <v14:CustomerTransactionId>Track By Number</v14:CustomerTransactionId>
+            <v14:Localization>
+               <v14:LanguageCode>EN</v14:LanguageCode>
+               <v14:LocaleCode>US</v14:LocaleCode>
+            </v14:Localization>
+         </v14:TransactionDetail>
+         <v14:Version>
+            <v14:ServiceId>trck</v14:ServiceId>
+            <v14:Major>14</v14:Major>
+            <v14:Intermediate>0</v14:Intermediate>
+            <v14:Minor>0</v14:Minor>
+         </v14:Version>
+         <v14:SelectionDetails>
+            <v14:CarrierCode>FDXE</v14:CarrierCode>
+            <v14:PackageIdentifier>
+               <v14:Type>SHIPPER_REFERENCE</v14:Type>
+               <v14:Value>G21</v14:Value>
+            </v14:PackageIdentifier>
+            <v14:ShipDateRangeBegin>${Date#result}</v14:ShipDateRangeBegin>
+            <v14:ShipDateRangeEnd>${Date#result}</v14:ShipDateRangeEnd>
+            <v14:ShipmentAccountNumber>443770429</v14:ShipmentAccountNumber>
+            <v14:Destination>
+               <v14:PostalCode>68847</v14:PostalCode>
+               <v14:CountryCode>US</v14:CountryCode>
+            </v14:Destination>
+         </v14:SelectionDetails>
+         <v14:ProcessingOptions>INCLUDE_DETAILED_SCANS</v14:ProcessingOptions>
+      </v14:TrackRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <TrackReply xmlns="http://fedex.com/ws/track/v14">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>trck</Source>
+            <Code>0</Code>
+            <Message>Request was successfully processed.</Message>
+            <LocalizedMessage>Request was successfully processed.</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>Track By Number</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>US</LocaleCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>trck</ServiceId>
+            <Major>14</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <CompletedTrackDetails>
+            <HighestSeverity>SUCCESS</HighestSeverity>
+            <Notifications>
+               <Severity>SUCCESS</Severity>
+               <Source>trck</Source>
+               <Code>0</Code>
+               <Message>Request was successfully processed.</Message>
+               <LocalizedMessage>Request was successfully processed.</LocalizedMessage>
+            </Notifications>
+            <DuplicateWaybill>false</DuplicateWaybill>
+            <MoreData>false</MoreData>
+            <TrackDetailsCount>0</TrackDetailsCount>
+            <TrackDetails>
+               <Notification>
+                  <Severity>ERROR</Severity>
+                  <Source>trck</Source>
+                  <Code>9040</Code>
+                  <Message>This tracking number cannot be found. Please check the number or contact the sender.</Message>
+                  <LocalizedMessage>This tracking number cannot be found. Please check the number or contact the sender.</LocalizedMessage>
+               </Notification>
+               <TrackingNumber>G21</TrackingNumber>
+               <StatusDetail>
+                  <Location>
+                     <Residential>false</Residential>
+                  </Location>
+               </StatusDetail>
+               <PackageSequenceNumber>0</PackageSequenceNumber>
+               <PackageCount>0</PackageCount>
+               <DeliveryAttempts>0</DeliveryAttempts>
+               <TotalUniqueAddressCountInConsolidation>0</TotalUniqueAddressCountInConsolidation>
+               <DeliveryOptionEligibilityDetails>
+                  <Option>INDIRECT_SIGNATURE_RELEASE</Option>
+                  <Eligibility>INELIGIBLE</Eligibility>
+               </DeliveryOptionEligibilityDetails>
+               <DeliveryOptionEligibilityDetails>
+                  <Option>REDIRECT_TO_HOLD_AT_LOCATION</Option>
+                  <Eligibility>INELIGIBLE</Eligibility>
+               </DeliveryOptionEligibilityDetails>
+               <DeliveryOptionEligibilityDetails>
+                  <Option>REROUTE</Option>
+                  <Eligibility>INELIGIBLE</Eligibility>
+               </DeliveryOptionEligibilityDetails>
+               <DeliveryOptionEligibilityDetails>
+                  <Option>RESCHEDULE</Option>
+                  <Eligibility>INELIGIBLE</Eligibility>
+               </DeliveryOptionEligibilityDetails>
+            </TrackDetails>
+         </CompletedTrackDetails>
+      </TrackReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

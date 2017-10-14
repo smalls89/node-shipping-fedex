@@ -1,0 +1,119 @@
+Request:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v15="http://fedex.com/ws/pickup/v15">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v15:CreatePickupRequest>
+         <v15:WebAuthenticationDetail>
+            <v15:ParentCredential>
+               <v15:Key>INPUT YOUR INFORMATION</v15:Key>
+               <v15:Password>INPUT YOUR INFORMATION</v15:Password>
+            </v15:ParentCredential>
+            <v15:UserCredential>
+               <v15:Key>INPUT YOUR INFORMATION</v15:Key>
+               <v15:Password>INPUT YOUR INFORMATION</v15:Password>
+            </v15:UserCredential>
+         </v15:WebAuthenticationDetail>
+         <v15:ClientDetail>
+            <v15:AccountNumber>INPUT YOUR INFORMATION</v15:AccountNumber>
+            <v15:MeterNumber>INPUT YOUR INFORMATION</v15:MeterNumber>
+            <v15:IntegratorId>12345</v15:IntegratorId>
+            <v15:Localization>
+               <v15:LanguageCode>EN</v15:LanguageCode>
+               <v15:LocaleCode>ES</v15:LocaleCode>
+            </v15:Localization>
+         </v15:ClientDetail>
+         <v15:TransactionDetail>
+            <v15:CustomerTransactionId>CreatePickupRequest_v15</v15:CustomerTransactionId>
+            <v15:Localization>
+               <v15:LanguageCode>EN</v15:LanguageCode>
+               <v15:LocaleCode>ES</v15:LocaleCode>
+            </v15:Localization>
+         </v15:TransactionDetail>
+         <v15:Version>
+            <v15:ServiceId>disp</v15:ServiceId>
+            <v15:Major>15</v15:Major>
+            <v15:Intermediate>0</v15:Intermediate>
+            <v15:Minor>0</v15:Minor>
+         </v15:Version>
+         <v15:AssociatedAccountNumber>
+            <v15:Type>FEDEX_EXPRESS</v15:Type>
+            <v15:AccountNumber>INPUT YOUR INFORMATION</v15:AccountNumber>
+         </v15:AssociatedAccountNumber>
+         <v15:OriginDetail>
+            <v15:PickupLocation>
+               <v15:Contact>
+                  <v15:ContactId>INPUT YOUR INFORMATION</v15:ContactId>
+                  <v15:PersonName>INPUT YOUR INFORMATION</v15:PersonName>
+                  <v15:Title>Mr.</v15:Title>
+                  <v15:CompanyName>INPUT YOUR INFORMATION$</v15:CompanyName>
+                  <v15:PhoneNumber>INPUT YOUR INFORMATION</v15:PhoneNumber>
+                  <v15:PhoneExtension>02033469</v15:PhoneExtension>
+                  <v15:PagerNumber>INPUT YOUR INFORMATION</v15:PagerNumber>
+                  <v15:FaxNumber>INPUT YOUR INFORMATION</v15:FaxNumber>
+                  <v15:EMailAddress>kaustubha_ramdasi@syntelinc.com</v15:EMailAddress>
+               </v15:Contact>
+               <v15:Address>
+                  <v15:StreetLines>INPUT YOUR INFORMATION</v15:StreetLines>
+                  <v15:StreetLines>INPUT YOUR INFORMATION</v15:StreetLines>
+                  <v15:City>Memphis</v15:City>
+                  <v15:StateOrProvinceCode>TN</v15:StateOrProvinceCode>
+                  <v15:PostalCode>38125</v15:PostalCode>
+                  <v15:CountryCode>US</v15:CountryCode>
+                  <v15:GeographicCoordinates>regina iovisque</v15:GeographicCoordinates>
+               </v15:Address>
+            </v15:PickupLocation>
+            <v15:PackageLocation>FRONT</v15:PackageLocation>
+            <v15:BuildingPart>DEPARTMENT</v15:BuildingPart>
+            <v15:BuildingPartDescription>BuildingPartDescription</v15:BuildingPartDescription>
+            <v15:ReadyTimestamp>2016-12-13T16:16:44-06:00</v15:ReadyTimestamp>
+            <v15:CompanyCloseTime>19:00:00</v15:CompanyCloseTime>
+            <v15:Location>NQAA</v15:Location>
+            <v15:SuppliesRequested>SuppliesRequested</v15:SuppliesRequested>
+         </v15:OriginDetail>
+         <v15:PackageCount>1</v15:PackageCount>
+         <v15:TotalWeight>
+            <v15:Units>LB</v15:Units>
+            <v15:Value>50.0</v15:Value>
+         </v15:TotalWeight>
+         <v15:CarrierCode>FDXE</v15:CarrierCode>
+         <v15:OversizePackageCount>0</v15:OversizePackageCount>
+         <v15:Remarks>Remarks</v15:Remarks>
+         <v15:CommodityDescription>TEST ENVIRONMENT - PLEASE DO NOT PROCESS PICKUP</v15:CommodityDescription>
+         <v15:CountryRelationship>DOMESTIC</v15:CountryRelationship>
+      </v15:CreatePickupRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Reply:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <CreatePickupReply xmlns="http://fedex.com/ws/pickup/v15">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>disp</Source>
+            <Code>0000</Code>
+            <Message>Success</Message>
+            <LocalizedMessage>Success</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>CreatePickupRequest_v15</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>ES</LocaleCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>disp</ServiceId>
+            <Major>15</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <PickupConfirmationNumber>INPUT YOUR INFORMATION</PickupConfirmationNumber>
+         <Location>NQAA</Location>
+      </CreatePickupReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

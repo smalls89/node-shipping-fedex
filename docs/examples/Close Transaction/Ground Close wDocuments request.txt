@@ -1,0 +1,38 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://fedex.com/ws/close/v5">
+   <SOAP-ENV:Body>
+      <GroundCloseWithDocumentsRequest>
+         <WebAuthenticationDetail>
+            <ParentCredential>
+               <Key>Input Your Information</Key>
+               <Password>Input Your Information</Password>
+            </ParentCredential>
+            <UserCredential>
+               <Key>Input Your Information</Key>
+               <Password>Input Your Information</Password>
+            </UserCredential>
+         </WebAuthenticationDetail>
+         <ClientDetail>
+            <AccountNumber>Input Your Information</AccountNumber>
+            <MeterNumber>Input Your Information</MeterNumber>
+            <IntegratorId>String</IntegratorId>
+         </ClientDetail>
+         <TransactionDetail>
+            <CustomerTransactionId>GroundCloseWithDocumentsRequest_v4</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>String</LanguageCode>
+               <LocaleCode>String</LocaleCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>clos</ServiceId>
+            <Major>5</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <CloseDate>2015-12-29</CloseDate>
+         <CloseDocumentSpecification>
+            <CloseDocumentTypes>MANIFEST</CloseDocumentTypes>
+         </CloseDocumentSpecification>
+      </GroundCloseWithDocumentsRequest>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,58 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v4="http://fedex.com/ws/addressvalidation/v4">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v4:AddressValidationRequest>
+         <v4:WebAuthenticationDetail>
+            <v4:ParentCredential>
+               <v4:Key>Input Your Information</v4:Key>
+               <v4:Password>Input Your Information</v4:Password>
+            </v4:ParentCredential>
+            <v4:UserCredential>
+               <v4:Key>Input Your Information</v4:Key>
+               <v4:Password>Input Your Information</v4:Password>
+            </v4:UserCredential>
+         </v4:WebAuthenticationDetail>
+         <v4:ClientDetail>
+            <v4:AccountNumber>Input Your Information</v4:AccountNumber>
+            <v4:MeterNumber>Input Your Information</v4:MeterNumber>
+            <v4:Localization>
+               <v4:LanguageCode>EN</v4:LanguageCode>
+               <v4:LocaleCode>CA</v4:LocaleCode>
+            </v4:Localization>
+         </v4:ClientDetail>
+         <v4:TransactionDetail>
+            <v4:CustomerTransactionId>AddressValidationRequest_v4</v4:CustomerTransactionId>
+            <v4:Localization>
+               <v4:LanguageCode>EN</v4:LanguageCode>
+               <v4:LocaleCode>CA</v4:LocaleCode>
+            </v4:Localization>
+         </v4:TransactionDetail>
+         <v4:Version>
+            <v4:ServiceId>aval</v4:ServiceId>
+            <v4:Major>4</v4:Major>
+            <v4:Intermediate>0</v4:Intermediate>
+            <v4:Minor>0</v4:Minor>
+         </v4:Version>
+         <v4:InEffectAsOfTimestamp>2015-03-09T01:21:14+05:30</v4:InEffectAsOfTimestamp>
+         <v4:AddressesToValidate>
+            <v4:ClientReferenceId>ac vinclis et</v4:ClientReferenceId>
+            <v4:Contact>
+               <v4:ContactId>Input Your Information</v4:ContactId>
+               <v4:PersonName>Input Your Information</v4:PersonName>
+               <v4:CompanyName>Input Your Information</v4:CompanyName>
+               <v4:PhoneNumber>Input Your Information</v4:PhoneNumber>
+               <v4:EMailAddress>Input Your Information</v4:EMailAddress>
+            </v4:Contact>
+            <v4:Address>
+               <v4:StreetLines>Input Your Information</v4:StreetLines>
+               <v4:City>Input Your Information</v4:City>
+               <v4:StateOrProvinceCode>Input Your Information</v4:StateOrProvinceCode>
+               <v4:PostalCode>Input Your Information</v4:PostalCode>
+               <v4:UrbanizationCode>Input Your Information</v4:UrbanizationCode>
+               <v4:CountryCode>Input Your Information</v4:CountryCode>
+               <v4:Residential>0</v4:Residential>
+            </v4:Address>
+         </v4:AddressesToValidate>
+      </v4:AddressValidationRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

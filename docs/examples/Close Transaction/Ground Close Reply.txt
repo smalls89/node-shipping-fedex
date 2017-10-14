@@ -1,0 +1,28 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <GroundCloseReply xmlns="http://fedex.com/ws/close/v5">
+         <HighestSeverity>ERROR</HighestSeverity>
+         <Notifications>
+            <Severity>ERROR</Severity>
+            <Source>clos</Source>
+            <Code>9804</Code>
+            <Message>No Shipments to Close</Message>
+            <LocalizedMessage>No Shipments to Close</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>GroundCloseRequest_v2</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>String</LocaleCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>clos</ServiceId>
+            <Major>5</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+      </GroundCloseReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

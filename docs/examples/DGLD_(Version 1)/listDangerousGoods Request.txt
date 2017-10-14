@@ -1,0 +1,54 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://fedex.com/ws/dgld/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:ListDangerousGoodsRequest>
+         <v1:WebAuthenticationDetail>
+            <v1:ParentCredential>
+               <v1:Key>Input your Information</v1:Key>
+               <v1:Password>Input your Information</v1:Password>
+            </v1:ParentCredential>
+            <v1:UserCredential>
+               <v1:Key>Input your Information</v1:Key>
+               <v1:Password>Input your Information</v1:Password>
+            </v1:UserCredential>
+         </v1:WebAuthenticationDetail>
+         <v1:ClientDetail>
+            <v1:AccountNumber>Input your Information</v1:AccountNumber>
+            <v1:MeterNumber>Input your Information</v1:MeterNumber>
+            <v1:Region>US</v1:Region>
+            <v1:Localization>
+               <v1:LanguageCode>EN</v1:LanguageCode>
+               <v1:LocaleCode>US</v1:LocaleCode>
+            </v1:Localization>
+         </v1:ClientDetail>
+         <v1:TransactionDetail>
+            <v1:CustomerTransactionId>ListDangerousGoodsRequest-Express_APR24</v1:CustomerTransactionId>
+         </v1:TransactionDetail>
+         <v1:Version>
+            <v1:ServiceId>dgds</v1:ServiceId>
+            <v1:Major>1</v1:Major>
+            <v1:Intermediate>0</v1:Intermediate>
+            <v1:Minor>0</v1:Minor>
+         </v1:Version>
+         <v1:Origin>
+            <v1:StreetLines>Input your Information</v1:StreetLines>
+            <v1:City>MEMPHIS</v1:City>
+            <v1:StateOrProvinceCode>TN</v1:StateOrProvinceCode>
+            <v1:PostalCode>381167510</v1:PostalCode>
+            <v1:CountryCode>US</v1:CountryCode>
+            <v1:Residential>1</v1:Residential>
+         </v1:Origin>
+         <v1:Destination>
+            <v1:StreetLines>Input your Information</v1:StreetLines>
+            <v1:City>Colorado Springs</v1:City>
+            <v1:StateOrProvinceCode>CO</v1:StateOrProvinceCode>
+            <v1:PostalCode>80903</v1:PostalCode>
+            <v1:CountryCode>US</v1:CountryCode>
+         </v1:Destination>
+         <v1:CarrierCode>FDXE</v1:CarrierCode>
+         <v1:ServiceType>PRIORITY_OVERNIGHT</v1:ServiceType>
+         <v1:ShipDate>2015-12-30</v1:ShipDate>
+         <v1:TrackingNumber>Input your Information</v1:TrackingNumber>
+      </v1:ListDangerousGoodsRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
