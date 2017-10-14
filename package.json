@@ -1,6 +1,6 @@
 {
   "name": "shipping-fedex",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "FedEx API bindings for Node.JS",
   "author": "uh-sem-blee, Co",
   "license": "MIT",
@@ -14,8 +14,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "extend": "^1.2.1",
-    "soap": "^0.9.4",
-    "xml2js": "^0.4.12"
+    "soap": "^0.22.0",
+    "xml2js": "^0.4.19"
   }
 }
